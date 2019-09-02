@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IHtmlPdfPrinterSettings
+   | Common-Lib docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IHtmlPdfPrinterSettings
+   | Common-Lib docs ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="O3.Gcs.Toolkit.HtmlPdfPrinting.IHtmlPdfPrinterSettings">
+  
+  
+  <h1 id="O3_Gcs_Toolkit_HtmlPdfPrinting_IHtmlPdfPrinterSettings" data-uid="O3.Gcs.Toolkit.HtmlPdfPrinting.IHtmlPdfPrinterSettings" class="text-break">Interface IHtmlPdfPrinterSettings
+  </h1>
+  <div class="markdown level0 summary">
+Настройки PDF-принтинга HTML-содержимого.
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">DigitalFlare.IValidatable.Validate()</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.IAbilityOption.IsDisabled</span>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.IComponentNameSetting.html#O3_Gcs_ComponentModel_IComponentNameSetting_IsComponentNameChangeSupported">IComponentNameSetting.IsComponentNameChangeSupported</a>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.IComponentNameSetting.html#O3_Gcs_ComponentModel_IComponentNameSetting_ComponentName">IComponentNameSetting.ComponentName</a>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.IComponentContractSetting.html#O3_Gcs_ComponentModel_IComponentContractSetting_IsComponentContractChangeSupported">IComponentContractSetting.IsComponentContractChangeSupported</a>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.IComponentContractSetting.html#O3_Gcs_ComponentModel_IComponentContractSetting_ComponentContract">IComponentContractSetting.ComponentContract</a>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.IAsReadOnlyMethod&lt;O3.Gcs.ComponentModel.IComponentSettings&gt;.AsReadOnly()</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.IIsReadOnlyProperty.IsReadOnly</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="O3.Gcs.Toolkit.HtmlPdfPrinting.html">O3.Gcs.Toolkit.HtmlPdfPrinting</a></h6>
+  <h6><strong>Assembly</strong>: O3.Gcs.CommonLib.Toolkit.HtmlPdfPrinting.dll</h6>
+  <h5 id="O3_Gcs_Toolkit_HtmlPdfPrinting_IHtmlPdfPrinterSettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IHtmlPdfPrinterSettings : IComponentSettings, ISettings, IValidatable, IAbilityOption, IComponentNameSetting, IComponentContractSetting, IAsReadOnly&lt;IComponentSettings&gt;, IAsReadOnlyMethod&lt;IComponentSettings&gt;, IAsReadOnly&lt;IHtmlPdfPrinterSettings&gt;, IIsReadOnlyProperty, IAsReadOnlyMethod&lt;IHtmlPdfPrinterSettings&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="O3_Gcs_Toolkit_HtmlPdfPrinting_IHtmlPdfPrinterSettings_DefaultTitle_" data-uid="O3.Gcs.Toolkit.HtmlPdfPrinting.IHtmlPdfPrinterSettings.DefaultTitle*"></a>
+  <h4 id="O3_Gcs_Toolkit_HtmlPdfPrinting_IHtmlPdfPrinterSettings_DefaultTitle" data-uid="O3.Gcs.Toolkit.HtmlPdfPrinting.IHtmlPdfPrinterSettings.DefaultTitle">DefaultTitle</h4>
+  <div class="markdown level1 summary">
+Возвращает/устанавливает наименование PDF-документа по умолчанию.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DefaultTitle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Toolkit_HtmlPdfPrinting_IHtmlPdfPrinterSettings_DefaultWaitTimeout_" data-uid="O3.Gcs.Toolkit.HtmlPdfPrinting.IHtmlPdfPrinterSettings.DefaultWaitTimeout*"></a>
+  <h4 id="O3_Gcs_Toolkit_HtmlPdfPrinting_IHtmlPdfPrinterSettings_DefaultWaitTimeout" data-uid="O3.Gcs.Toolkit.HtmlPdfPrinting.IHtmlPdfPrinterSettings.DefaultWaitTimeout">DefaultWaitTimeout</h4>
+  <div class="markdown level1 summary">
+Возвращает/устанавливает дефолтный таймаут ожидания начала печати.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TimeoutDuration DefaultWaitTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DigitalFlare.Threading.TimeoutDuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Toolkit_HtmlPdfPrinting_IHtmlPdfPrinterSettings_IdleTimeout_" data-uid="O3.Gcs.Toolkit.HtmlPdfPrinting.IHtmlPdfPrinterSettings.IdleTimeout*"></a>
+  <h4 id="O3_Gcs_Toolkit_HtmlPdfPrinting_IHtmlPdfPrinterSettings_IdleTimeout" data-uid="O3.Gcs.Toolkit.HtmlPdfPrinting.IHtmlPdfPrinterSettings.IdleTimeout">IdleTimeout</h4>
+  <div class="markdown level1 summary">
+Возвращает/устанавливает таймаут простоя.
+<p>По истечении указанного таймаута, при отсутствии запросов печати автоматически производится освобождение ресурсов компонента.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TimeoutDuration IdleTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DigitalFlare.Threading.TimeoutDuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Toolkit_HtmlPdfPrinting_IHtmlPdfPrinterSettings_InputHtmlFileMaxLength_" data-uid="O3.Gcs.Toolkit.HtmlPdfPrinting.IHtmlPdfPrinterSettings.InputHtmlFileMaxLength*"></a>
+  <h4 id="O3_Gcs_Toolkit_HtmlPdfPrinting_IHtmlPdfPrinterSettings_InputHtmlFileMaxLength" data-uid="O3.Gcs.Toolkit.HtmlPdfPrinting.IHtmlPdfPrinterSettings.InputHtmlFileMaxLength">InputHtmlFileMaxLength</h4>
+  <div class="markdown level1 summary">
+Возвращает/устанавливает ограничение размера файла, содержащего HTML.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int? InputHtmlFileMaxLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Toolkit_HtmlPdfPrinting_IHtmlPdfPrinterSettings_InputHtmlTextMaxLength_" data-uid="O3.Gcs.Toolkit.HtmlPdfPrinting.IHtmlPdfPrinterSettings.InputHtmlTextMaxLength*"></a>
+  <h4 id="O3_Gcs_Toolkit_HtmlPdfPrinting_IHtmlPdfPrinterSettings_InputHtmlTextMaxLength" data-uid="O3.Gcs.Toolkit.HtmlPdfPrinting.IHtmlPdfPrinterSettings.InputHtmlTextMaxLength">InputHtmlTextMaxLength</h4>
+  <div class="markdown level1 summary">
+Возвращает/устанавливает ограничение размера HTML-текста.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int? InputHtmlTextMaxLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="O3.Gcs.Diagnostics.Metrics.MetricUtilities.html#O3_Gcs_Diagnostics_Metrics_MetricUtilities_GetMetricComponentName_System_Object_">MetricUtilities.GetMetricComponentName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            ©LLC Ozon Technology
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

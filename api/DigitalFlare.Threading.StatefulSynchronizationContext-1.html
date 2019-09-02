@@ -1,0 +1,1053 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StatefulSynchronizationContext&lt;TCtxState&gt;
+   | Oxy API reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StatefulSynchronizationContext&lt;TCtxState&gt;
+   | Oxy API reference ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1">
+  
+  
+  <h1 id="DigitalFlare_Threading_StatefulSynchronizationContext_1" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1" class="text-break">Class StatefulSynchronizationContext&lt;TCtxState&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="DigitalFlare.Disposable.html">Disposable</a></div>
+    <div class="level2"><span class="xref">StatefulSynchronizationContext&lt;TCtxState&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DigitalFlare.IOxyDisposable.html">IOxyDisposable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="DigitalFlare.Threading.IStatefulSynchronizationContext-1.html">IStatefulSynchronizationContext</a>&lt;TCtxState&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_IsDisposeRequested">Disposable.IsDisposeRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_Disposing">Disposable.Disposing</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_IsDisposed">Disposable.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_SetDisposeRequested">Disposable.SetDisposeRequested()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_EnsureNotDisposeState">Disposable.EnsureNotDisposeState()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_DigitalFlare_IOxyDisposable_EnsureNotDisposeState">Disposable.IOxyDisposable.EnsureNotDisposeState()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_EnsureNotDisposeState_System_Boolean_">Disposable.EnsureNotDisposeState(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_FireAfterDisposed_System_Boolean_">Disposable.FireAfterDisposed(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_ReadDA__1___0__">Disposable.ReadDA&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_ReadDA__1___0__System_Boolean_">Disposable.ReadDA&lt;T&gt;(T, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryReadDA__1___0__System_Boolean___0__">Disposable.TryReadDA&lt;T&gt;(T, Boolean, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryReadDA__1___0____0__">Disposable.TryReadDA&lt;T&gt;(T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryReadDA__1___0__System_Boolean_">Disposable.TryReadDA&lt;T&gt;(T, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryReadDA__1___0__">Disposable.TryReadDA&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryReadDA__1_DigitalFlare_IVh___0_____0__">Disposable.TryReadDA&lt;T&gt;(IVh&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_WriteDA__1___0____0___0_">Disposable.WriteDA&lt;T&gt;(T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_WriteDA__1___0____0___0_System_Boolean__">Disposable.WriteDA&lt;T&gt;(T, T, T, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_WriteDA__1___0____0_">Disposable.WriteDA&lt;T&gt;(T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryWriteDA__1___0____0_">Disposable.TryWriteDA&lt;T&gt;(T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryWriteDA__1___0____0___0__">Disposable.TryWriteDA&lt;T&gt;(T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryWriteDA__1___0____0___0___0__">Disposable.TryWriteDA&lt;T&gt;(T, T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryWriteDA__1___0____0___0_">Disposable.TryWriteDA&lt;T&gt;(T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1___0__System_Func___0__System_Action___0__">Disposable.InitDA&lt;T&gt;(T, Func&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1___0__DigitalFlare_OutParamFunc___0__System_Action___0__">Disposable.InitDA&lt;T&gt;(T, OutParamFunc&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1_DigitalFlare_IVh___0___DigitalFlare_OutParamFunc_DigitalFlare_IVh___0___">Disposable.InitDA&lt;T&gt;(IVh&lt;T&gt;, OutParamFunc&lt;IVh&lt;T&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1_DigitalFlare_IVh___0___System_Func_DigitalFlare_IVh___0___">Disposable.InitDA&lt;T&gt;(IVh&lt;T&gt;, Func&lt;IVh&lt;T&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1_DigitalFlare_Vh___0___DigitalFlare_OutParamFunc_DigitalFlare_Vh___0___">Disposable.InitDA&lt;T&gt;(Vh&lt;T&gt;, OutParamFunc&lt;Vh&lt;T&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1_DigitalFlare_Vh___0___System_Func_DigitalFlare_Vh___0___">Disposable.InitDA&lt;T&gt;(Vh&lt;T&gt;, Func&lt;Vh&lt;T&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1_DigitalFlare_VhClass___0___DigitalFlare_OutParamFunc___0__System_Action___0__">Disposable.InitDA&lt;T&gt;(VhClass&lt;T&gt;, OutParamFunc&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1_DigitalFlare_VhClass___0___System_Func___0__System_Action___0__">Disposable.InitDA&lt;T&gt;(VhClass&lt;T&gt;, Func&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDANullable__1_DigitalFlare_VhClass___0___DigitalFlare_OutParamFunc___0__System_Action___0__">Disposable.InitDANullable&lt;T&gt;(VhClass&lt;T&gt;, OutParamFunc&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDANullable__1_DigitalFlare_VhClass___0___System_Func___0__System_Action___0__">Disposable.InitDANullable&lt;T&gt;(VhClass&lt;T&gt;, Func&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDABool__1___0__DigitalFlare_Transform___0__System_Action___0__">Disposable.UpdDABool&lt;T&gt;(T, Transform&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDABool__1___0__DigitalFlare_Transform___0____0__System_Action___0__">Disposable.UpdDABool&lt;T&gt;(T, Transform&lt;T&gt;, T, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDA__1___0__DigitalFlare_Transform___0__DigitalFlare_Threading_InterlockedUpdateResult___0___System_Action___0__">Disposable.UpdDA&lt;T&gt;(T, Transform&lt;T&gt;, InterlockedUpdateResult&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDA__1___0__DigitalFlare_Transform___0__System_Action___0__">Disposable.UpdDA&lt;T&gt;(T, Transform&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDABool__1___0__DigitalFlare_Transform2___0__">Disposable.UpdDABool&lt;T&gt;(T, Transform2&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDABool__1___0__DigitalFlare_Transform2___0____0__">Disposable.UpdDABool&lt;T&gt;(T, Transform2&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDA__1___0__DigitalFlare_Transform2___0__DigitalFlare_Threading_InterlockedUpdateResult___0___">Disposable.UpdDA&lt;T&gt;(T, Transform2&lt;T&gt;, InterlockedUpdateResult&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDA__1___0__DigitalFlare_Transform2___0__">Disposable.UpdDA&lt;T&gt;(T, Transform2&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDABool__1___0____0___0_">Disposable.UpdDABool&lt;T&gt;(T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDABool__1___0____0___0___0__">Disposable.UpdDABool&lt;T&gt;(T, T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDAIfNullBool__1___0____0_">Disposable.UpdDAIfNullBool&lt;T&gt;(T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDAIfNullBool__1___0____0___0__">Disposable.UpdDAIfNullBool&lt;T&gt;(T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDAIfNullBool__1___0__System_Func___0____0__">Disposable.UpdDAIfNullBool&lt;T&gt;(T, Func&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDAIfNull__1___0____0_">Disposable.UpdDAIfNull&lt;T&gt;(T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDAIfNull__1___0__System_Func___0__">Disposable.UpdDAIfNull&lt;T&gt;(T, Func&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDA__2___0____1__DigitalFlare_TransformStateful___0___1__DigitalFlare_TransformCleanupStateful___0___1__">Disposable.UpdDA&lt;T, TState&gt;(T, TState, TransformStateful&lt;T, TState&gt;, TransformCleanupStateful&lt;T, TState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_AddEventHandler__1_System_EventHandler___0___System_EventHandler___0__">Disposable.AddEventHandler&lt;TEventArgs&gt;(EventHandler&lt;TEventArgs&gt;, EventHandler&lt;TEventArgs&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_AddEventHandler_System_EventHandler__System_EventHandler_">Disposable.AddEventHandler(EventHandler, EventHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_RemoveEventHandler__1_System_EventHandler___0___System_EventHandler___0__">Disposable.RemoveEventHandler&lt;TEventArgs&gt;(EventHandler&lt;TEventArgs&gt;, EventHandler&lt;TEventArgs&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_RemoveEventHandler_System_EventHandler__System_EventHandler_">Disposable.RemoveEventHandler(EventHandler, EventHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_EnumerateDA__1___0____">Disposable.EnumerateDA&lt;T&gt;(T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_EnumerateDA__1___0____System_Boolean_">Disposable.EnumerateDA&lt;T&gt;(T[], Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_EnumerateDA__1_System_Collections_Generic_IEnumerable___0__">Disposable.EnumerateDA&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_EnumerateDA__1_System_Collections_Generic_IEnumerable___0__System_Boolean_">Disposable.EnumerateDA&lt;T&gt;(IEnumerable&lt;T&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_OnDeserializing_System_Runtime_Serialization_StreamingContext_">Disposable.OnDeserializing(StreamingContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_OnDeserialized_System_Runtime_Serialization_StreamingContext_">Disposable.OnDeserialized(StreamingContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_Dispose">Disposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DigitalFlare.Threading.html">DigitalFlare.Threading</a></h6>
+  <h6><strong>Assembly</strong>: digital-flare.oxy.threading.primitives.dll</h6>
+  <h5 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class StatefulSynchronizationContext&lt;TCtxState&gt; : Disposable, IOxyDisposable, IDisposable, IStatefulSynchronizationContext&lt;TCtxState&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TCtxState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1__ctor_System_Func_System_Threading_CancellationToken_DigitalFlare_IVh__0___System_Threading_CancellationToken_DigitalFlare_Context_XFullCorrelationId_System_Boolean_DigitalFlare_Diagnostics_IUnhandledExceptionObserver_.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.%23ctor(System.Func%7BSystem.Threading.CancellationToken%2CDigitalFlare.IVh%7B%600%7D%7D%2CSystem.Threading.CancellationToken%2CDigitalFlare.Context.XFullCorrelationId%2CSystem.Boolean%2CDigitalFlare.Diagnostics.IUnhandledExceptionObserver)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L379">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1__ctor_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.#ctor*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1__ctor_System_Func_System_Threading_CancellationToken_DigitalFlare_IVh__0___System_Threading_CancellationToken_DigitalFlare_Context_XFullCorrelationId_System_Boolean_DigitalFlare_Diagnostics_IUnhandledExceptionObserver_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.#ctor(System.Func{System.Threading.CancellationToken,DigitalFlare.IVh{`0}},System.Threading.CancellationToken,DigitalFlare.Context.XFullCorrelationId,System.Boolean,DigitalFlare.Diagnostics.IUnhandledExceptionObserver)">StatefulSynchronizationContext(Func&lt;CancellationToken, IVh&lt;TCtxState&gt;&gt;, CancellationToken, XFullCorrelationId, Boolean, IUnhandledExceptionObserver)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StatefulSynchronizationContext(Func&lt;CancellationToken, IVh&lt;TCtxState&gt;&gt; stateFactory, CancellationToken stopToken = default(CancellationToken), XFullCorrelationId correlationId = null, bool autoStart = false, IUnhandledExceptionObserver unhandledExceptionObserver = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="DigitalFlare.IVh-1.html">IVh</a>&lt;TCtxState&gt;&gt;</td>
+        <td><span class="parametername">stateFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">stopToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Context.XFullCorrelationId.html">XFullCorrelationId</a></td>
+        <td><span class="parametername">correlationId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">autoStart</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Diagnostics.IUnhandledExceptionObserver.html">IUnhandledExceptionObserver</a></td>
+        <td><span class="parametername">unhandledExceptionObserver</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_AutoStart.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.AutoStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L410">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1_AutoStart_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.AutoStart*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_AutoStart" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.AutoStart">AutoStart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoStart { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_CorrelationId.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.CorrelationId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L407">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1_CorrelationId_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.CorrelationId*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_CorrelationId" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.CorrelationId">CorrelationId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XFullCorrelationId CorrelationId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Context.XFullCorrelationId.html">XFullCorrelationId</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_HasShutdownFinished.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.HasShutdownFinished%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L423">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1_HasShutdownFinished_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.HasShutdownFinished*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_HasShutdownFinished" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.HasShutdownFinished">HasShutdownFinished</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasShutdownFinished { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_HasShutdownRequested.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.HasShutdownRequested%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L420">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1_HasShutdownRequested_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.HasShutdownRequested*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_HasShutdownRequested" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.HasShutdownRequested">HasShutdownRequested</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasShutdownRequested { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_RunControl.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.RunControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L417">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1_RunControl_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.RunControl*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_RunControl" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.RunControl">RunControl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRunControl&lt;IStatefulSynchronizationContext&lt;TCtxState&gt;&gt; RunControl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.ComponentModel.IRunControl-1.html">IRunControl</a>&lt;<a class="xref" href="DigitalFlare.Threading.IStatefulSynchronizationContext-1.html">IStatefulSynchronizationContext</a>&lt;TCtxState&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L694">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1_Dispose_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.Dispose*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_Dispose_System_Boolean_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool explicitDispose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">explicitDispose</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_Dispose_System_Boolean_">Disposable.Dispose(Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_ExecuteAsync__2_DigitalFlare_Threading_StatefulSynchronizationContextExecute__0___0___1____0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.ExecuteAsync%60%602(DigitalFlare.Threading.StatefulSynchronizationContextExecute%7B%600%2C%60%600%2C%60%601%7D%2C%60%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L556">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1_ExecuteAsync_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.ExecuteAsync*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_ExecuteAsync__2_DigitalFlare_Threading_StatefulSynchronizationContextExecute__0___0___1____0_System_Threading_CancellationToken_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.ExecuteAsync``2(DigitalFlare.Threading.StatefulSynchronizationContextExecute{`0,``0,``1},``0,System.Threading.CancellationToken)">ExecuteAsync&lt;TState, TResult&gt;(StatefulSynchronizationContextExecute&lt;TCtxState, TState, TResult&gt;, TState, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TResult&gt; ExecuteAsync&lt;TState, TResult&gt;(StatefulSynchronizationContextExecute&lt;TCtxState, TState, TResult&gt; delegate, TState state, CancellationToken ct = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextExecute-3.html">StatefulSynchronizationContextExecute</a>&lt;TCtxState, TState, TResult&gt;</td>
+        <td><span class="parametername">delegate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_ExecuteOneWay__1_DigitalFlare_Threading_StatefulSynchronizationContextExecuteOneWay__0___0____0_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.ExecuteOneWay%60%601(DigitalFlare.Threading.StatefulSynchronizationContextExecuteOneWay%7B%600%2C%60%600%7D%2C%60%600%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L533">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1_ExecuteOneWay_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.ExecuteOneWay*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_ExecuteOneWay__1_DigitalFlare_Threading_StatefulSynchronizationContextExecuteOneWay__0___0____0_System_Threading_CancellationToken_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.ExecuteOneWay``1(DigitalFlare.Threading.StatefulSynchronizationContextExecuteOneWay{`0,``0},``0,System.Threading.CancellationToken)">ExecuteOneWay&lt;TState&gt;(StatefulSynchronizationContextExecuteOneWay&lt;TCtxState, TState&gt;, TState, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteOneWay&lt;TState&gt;(StatefulSynchronizationContextExecuteOneWay&lt;TCtxState, TState&gt; action, TState state, CancellationToken ct = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextExecuteOneWay-2.html">StatefulSynchronizationContextExecuteOneWay</a>&lt;TCtxState, TState&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TState</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TState</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_FireBeforeDispose_System_Boolean_.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.FireBeforeDispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L686">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1_FireBeforeDispose_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.FireBeforeDispose*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_FireBeforeDispose_System_Boolean_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.FireBeforeDispose(System.Boolean)">FireBeforeDispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void FireBeforeDispose(bool explicitDispose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">explicitDispose</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_FireBeforeDispose_System_Boolean_">Disposable.FireBeforeDispose(Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_ShutdownAsync.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.ShutdownAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L636">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1_ShutdownAsync_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.ShutdownAsync*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_ShutdownAsync" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.ShutdownAsync">ShutdownAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ShutdownAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_ToString.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L683">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1_ToString_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.ToString*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_ToString" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_TryCancelInvokes.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.TryCancelInvokes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L627">View Source</a>
+  </span>
+  <a id="DigitalFlare_Threading_StatefulSynchronizationContext_1_TryCancelInvokes_" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.TryCancelInvokes*"></a>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_TryCancelInvokes" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.TryCancelInvokes">TryCancelInvokes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryCancelInvokes()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1_ShutdownFinished.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601.ShutdownFinished%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L443">View Source</a>
+  </span>
+  <h4 id="DigitalFlare_Threading_StatefulSynchronizationContext_1_ShutdownFinished" data-uid="DigitalFlare.Threading.StatefulSynchronizationContext`1.ShutdownFinished">ShutdownFinished</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler ShutdownFinished</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DigitalFlare.IOxyDisposable.html">IOxyDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.IStatefulSynchronizationContext-1.html">IStatefulSynchronizationContext&lt;TCtxState&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="DigitalFlare.DisposableUtilities.html#DigitalFlare_DisposableUtilities_DisposeFunc__1___0_">DisposableUtilities.DisposeFunc&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.DisposableUtilities.html#DigitalFlare_DisposableUtilities_Dispose_System_IDisposable_System_Exception_">DisposableUtilities.Dispose(IDisposable, Exception)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_Boolean_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_Boolean_System_Boolean_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, Boolean, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_Collections_Generic_IEnumerable_System_IDisposable__">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, IEnumerable&lt;IDisposable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_IDisposable_System_IDisposable_System_IDisposable_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, IDisposable, IDisposable, IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_IDisposable_System_IDisposable_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, IDisposable, IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_IDisposable_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextUtilities.html#DigitalFlare_Threading_StatefulSynchronizationContextUtilities_InvokeAsync__2_DigitalFlare_Threading_IStatefulSynchronizationContext___0__System_Func_DigitalFlare_Threading_StatefulSynchronizationContextInvokeArgs___0_DigitalFlare_Nil____1__System_Threading_CancellationToken_">StatefulSynchronizationContextUtilities.InvokeAsync&lt;TCtxState, TResult&gt;(IStatefulSynchronizationContext&lt;TCtxState&gt;, Func&lt;StatefulSynchronizationContextInvokeArgs&lt;TCtxState, Nil&gt;, TResult&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextUtilities.html#DigitalFlare_Threading_StatefulSynchronizationContextUtilities_InvokeAsync__2_DigitalFlare_Threading_IStatefulSynchronizationContext___0__System_Func_DigitalFlare_Threading_StatefulSynchronizationContextInvokeArgs___0_DigitalFlare_Nil____1__DigitalFlare_Context_IContext_">StatefulSynchronizationContextUtilities.InvokeAsync&lt;TCtxState, TResult&gt;(IStatefulSynchronizationContext&lt;TCtxState&gt;, Func&lt;StatefulSynchronizationContextInvokeArgs&lt;TCtxState, Nil&gt;, TResult&gt;, IContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextUtilities.html#DigitalFlare_Threading_StatefulSynchronizationContextUtilities_InvokeAsync__1_DigitalFlare_Threading_IStatefulSynchronizationContext___0__System_Action_DigitalFlare_Threading_StatefulSynchronizationContextInvokeArgs___0_DigitalFlare_Nil___System_Threading_CancellationToken_">StatefulSynchronizationContextUtilities.InvokeAsync&lt;TCtxState&gt;(IStatefulSynchronizationContext&lt;TCtxState&gt;, Action&lt;StatefulSynchronizationContextInvokeArgs&lt;TCtxState, Nil&gt;&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextUtilities.html#DigitalFlare_Threading_StatefulSynchronizationContextUtilities_InvokeAsync__1_DigitalFlare_Threading_IStatefulSynchronizationContext___0__System_Action_DigitalFlare_Threading_StatefulSynchronizationContextInvokeArgs___0_DigitalFlare_Nil___DigitalFlare_Context_IContext_">StatefulSynchronizationContextUtilities.InvokeAsync&lt;TCtxState&gt;(IStatefulSynchronizationContext&lt;TCtxState&gt;, Action&lt;StatefulSynchronizationContextInvokeArgs&lt;TCtxState, Nil&gt;&gt;, IContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextUtilities.html#DigitalFlare_Threading_StatefulSynchronizationContextUtilities_InvokeAsync__3_DigitalFlare_Threading_IStatefulSynchronizationContext___1__System_Func_DigitalFlare_Threading_StatefulSynchronizationContextInvokeArgs___1___2____0____2_System_Threading_CancellationToken_">StatefulSynchronizationContextUtilities.InvokeAsync&lt;TResult, TCtxState, TState&gt;(IStatefulSynchronizationContext&lt;TCtxState&gt;, Func&lt;StatefulSynchronizationContextInvokeArgs&lt;TCtxState, TState&gt;, TResult&gt;, TState, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextUtilities.html#DigitalFlare_Threading_StatefulSynchronizationContextUtilities_InvokeAsync__3_DigitalFlare_Threading_IStatefulSynchronizationContext___1__System_Func_DigitalFlare_Threading_StatefulSynchronizationContextInvokeArgs___1___2____0____2_DigitalFlare_Context_IContext_">StatefulSynchronizationContextUtilities.InvokeAsync&lt;TResult, TCtxState, TState&gt;(IStatefulSynchronizationContext&lt;TCtxState&gt;, Func&lt;StatefulSynchronizationContextInvokeArgs&lt;TCtxState, TState&gt;, TResult&gt;, TState, IContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextUtilities.html#DigitalFlare_Threading_StatefulSynchronizationContextUtilities_InvokeAsync__2_DigitalFlare_Threading_IStatefulSynchronizationContext___0__System_Action_DigitalFlare_Threading_StatefulSynchronizationContextInvokeArgs___0___1_____1_System_Threading_CancellationToken_">StatefulSynchronizationContextUtilities.InvokeAsync&lt;TCtxState, TState&gt;(IStatefulSynchronizationContext&lt;TCtxState&gt;, Action&lt;StatefulSynchronizationContextInvokeArgs&lt;TCtxState, TState&gt;&gt;, TState, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextUtilities.html#DigitalFlare_Threading_StatefulSynchronizationContextUtilities_InvokeAsync__2_DigitalFlare_Threading_IStatefulSynchronizationContext___0__System_Action_DigitalFlare_Threading_StatefulSynchronizationContextInvokeArgs___0___1_____1_DigitalFlare_Context_IContext_">StatefulSynchronizationContextUtilities.InvokeAsync&lt;TCtxState, TState&gt;(IStatefulSynchronizationContext&lt;TCtxState&gt;, Action&lt;StatefulSynchronizationContextInvokeArgs&lt;TCtxState, TState&gt;&gt;, TState, IContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextUtilities.html#DigitalFlare_Threading_StatefulSynchronizationContextUtilities_InvokeOneWay__2_DigitalFlare_Threading_IStatefulSynchronizationContext___0__System_Action_DigitalFlare_Threading_StatefulSynchronizationContextInvokeArgs___0___1_____1_System_Threading_CancellationToken_">StatefulSynchronizationContextUtilities.InvokeOneWay&lt;TCtxState, TState&gt;(IStatefulSynchronizationContext&lt;TCtxState&gt;, Action&lt;StatefulSynchronizationContextInvokeArgs&lt;TCtxState, TState&gt;&gt;, TState, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextUtilities.html#DigitalFlare_Threading_StatefulSynchronizationContextUtilities_InvokeOneWay__2_DigitalFlare_Threading_IStatefulSynchronizationContext___0__System_Action_DigitalFlare_Threading_StatefulSynchronizationContextInvokeArgs___0___1_____1_DigitalFlare_Context_IContext_">StatefulSynchronizationContextUtilities.InvokeOneWay&lt;TCtxState, TState&gt;(IStatefulSynchronizationContext&lt;TCtxState&gt;, Action&lt;StatefulSynchronizationContextInvokeArgs&lt;TCtxState, TState&gt;&gt;, TState, IContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextUtilities.html#DigitalFlare_Threading_StatefulSynchronizationContextUtilities_InvokeOneWay__1_DigitalFlare_Threading_IStatefulSynchronizationContext___0__System_Action_DigitalFlare_Threading_StatefulSynchronizationContextInvokeArgs___0_DigitalFlare_Nil___System_Threading_CancellationToken_">StatefulSynchronizationContextUtilities.InvokeOneWay&lt;TCtxState&gt;(IStatefulSynchronizationContext&lt;TCtxState&gt;, Action&lt;StatefulSynchronizationContextInvokeArgs&lt;TCtxState, Nil&gt;&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.StatefulSynchronizationContextUtilities.html#DigitalFlare_Threading_StatefulSynchronizationContextUtilities_InvokeOneWay__1_DigitalFlare_Threading_IStatefulSynchronizationContext___0__System_Action_DigitalFlare_Threading_StatefulSynchronizationContextInvokeArgs___0_DigitalFlare_Nil___DigitalFlare_Context_IContext_">StatefulSynchronizationContextUtilities.InvokeOneWay&lt;TCtxState&gt;(IStatefulSynchronizationContext&lt;TCtxState&gt;, Action&lt;StatefulSynchronizationContextInvokeArgs&lt;TCtxState, Nil&gt;&gt;, IContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Runtime.Serialization.Json.JsonSerializationUtilities.html#DigitalFlare_Runtime_Serialization_Json_JsonSerializationUtilities_SerializeToJson__1___0_System_Boolean_">JsonSerializationUtilities.SerializeToJson&lt;T&gt;(T, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Runtime.Serialization.Json.JsonSerializationUtilities.html#DigitalFlare_Runtime_Serialization_Json_JsonSerializationUtilities_SerializeToJson__1___0_Newtonsoft_Json_JsonSerializer_System_Boolean_">JsonSerializationUtilities.SerializeToJson&lt;T&gt;(T, JsonSerializer, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Runtime.Serialization.Json.JsonSerializationUtilities.html#DigitalFlare_Runtime_Serialization_Json_JsonSerializationUtilities_SerializeToJsonAsync__1___0_">JsonSerializationUtilities.SerializeToJsonAsync&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Runtime.Serialization.Json.JsonSerializationUtilities.html#DigitalFlare_Runtime_Serialization_Json_JsonSerializationUtilities_SerializeToJson__1___0_">JsonSerializationUtilities.SerializeToJson&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_Arg__1___0_System_String_">ArgumentUtilities.Arg&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_Arg__1___0_System_String_DigitalFlare_ExceptionFactoryDelegate2_">ArgumentUtilities.Arg&lt;T&gt;(T, String, ExceptionFactoryDelegate2)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_ArgProp__1___0_System_String_">ArgumentUtilities.ArgProp&lt;TArg&gt;(TArg, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_ArgProp__1___0_System_String_DigitalFlare_ExceptionFactoryDelegate2_">ArgumentUtilities.ArgProp&lt;T&gt;(T, String, ExceptionFactoryDelegate2)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_PropArg__1___0_System_String_DigitalFlare_ExceptionFactoryDelegate2_">ArgumentUtilities.PropArg&lt;T&gt;(T, String, ExceptionFactoryDelegate2)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_PropArg__1___0_System_String_">ArgumentUtilities.PropArg&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_EnsureNotNull__1___0_System_String_">ArgumentUtilities.EnsureNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilities.html#DigitalFlare_Linq_EnumerableUtilities_EmptySequence__1___0_">EnumerableUtilities.EmptySequence&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilities.html#DigitalFlare_Linq_EnumerableUtilities_Sequence__1___0_System_Func___0_System_Boolean__System_Func___0___0__">EnumerableUtilities.Sequence&lt;T&gt;(T, Func&lt;T, Boolean&gt;, Func&lt;T, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilities.html#DigitalFlare_Linq_EnumerableUtilities_Sequence__1___0_System_Int32_">EnumerableUtilities.Sequence&lt;T&gt;(T, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilities.html#DigitalFlare_Linq_EnumerableUtilities_Sequence__1___0_">EnumerableUtilities.Sequence&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentPlaceholderUtilities.html#DigitalFlare_ArgumentPlaceholderUtilities_ArgPlaceholder__1___0_">ArgumentPlaceholderUtilities.ArgPlaceholder&lt;TValue&gt;(TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.StringUtilities.html#DigitalFlare_StringUtilities_ToFormattableString_System_Object_System_Boolean_">StringUtilities.ToFormattableString(Object, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.StringUtilities.html#DigitalFlare_StringUtilities_ToFormattableString_System_Object_">StringUtilities.ToFormattableString(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.StringUtilities.html#DigitalFlare_StringUtilities_ToFormattableString__1___0_System_Boolean_">StringUtilities.ToFormattableString&lt;T&gt;(T, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.StringUtilities.html#DigitalFlare_StringUtilities_ToFormattableString__1___0_">StringUtilities.ToFormattableString&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilitiesCoreL1.html#DigitalFlare_ArgumentUtilitiesCoreL1_Cast__2___0_">ArgumentUtilitiesCoreL1.Cast&lt;TFrom, TTo&gt;(TFrom)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.FormatStringUtilities.html#DigitalFlare_FormatStringUtilities_FmtStr__1___0_">FormatStringUtilities.FmtStr&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilitiesCoreL1.html#DigitalFlare_Linq_EnumerableUtilitiesCoreL1_TreeNode__1___0_">EnumerableUtilitiesCoreL1.TreeNode&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Description.DescriptionUtilities.html#DigitalFlare_Description_DescriptionUtilities_LogDisabilityWarning_System_Object_DigitalFlare_Description_IDescription_System_String_DigitalFlare_ArgumentPlaceholder_DigitalFlare_Diagnostics_SeverityLevel__">DescriptionUtilities.LogDisabilityWarning(Object, IDescription, String, ArgumentPlaceholder&lt;SeverityLevel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Description.DescriptionUtilities.html#DigitalFlare_Description_DescriptionUtilities_LogAutoActivationDisabilityWarning_System_Object_DigitalFlare_Description_IDescription_System_String_DigitalFlare_ArgumentPlaceholder_DigitalFlare_Diagnostics_SeverityLevel__">DescriptionUtilities.LogAutoActivationDisabilityWarning(Object, IDescription, String, ArgumentPlaceholder&lt;SeverityLevel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.FluentApiUtilities.html#DigitalFlare_FluentApiUtilities_Fluent__1___0_">FluentApiUtilities.Fluent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.FluentApiUtilities.html#DigitalFlare_FluentApiUtilities_Convert__2___0_System_Func___1__System_Func___0___1__">FluentApiUtilities.Convert&lt;TSource, TResult&gt;(TSource, Func&lt;TResult&gt;, Func&lt;TSource, TResult&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterAndExitLockSmallTimeout__1___0_">MonitorUtilities.EnterAndExitLockSmallTimeout&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterLockSmallTimeout__1___0_System_Boolean__">MonitorUtilities.EnterLockSmallTimeout&lt;T&gt;(T, ref Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterAndExitLock__1___0_">MonitorUtilities.EnterAndExitLock&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterLock__1___0_System_Boolean__">MonitorUtilities.EnterLock&lt;T&gt;(T, ref Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterLock__1___0_System_Int32_System_Boolean__">MonitorUtilities.EnterLock&lt;T&gt;(T, Int32, ref Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_TryEnterLock__1___0_System_Boolean__">MonitorUtilities.TryEnterLock&lt;T&gt;(T, ref Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_ExitLock__1___0_">MonitorUtilities.ExitLock&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Threading_StatefulSynchronizationContext_1.md&amp;value=---%0Auid%3A%20DigitalFlare.Threading.StatefulSynchronizationContext%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.threading.primitives/Threading/StatefulSynchronizationContext`1.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © Vitalik Mironov, 2006-2019. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

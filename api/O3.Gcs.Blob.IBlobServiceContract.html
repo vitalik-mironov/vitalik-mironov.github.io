@@ -1,0 +1,1187 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IBlobServiceContract
+   | Common-Lib docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IBlobServiceContract
+   | Common-Lib docs ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="O3.Gcs.Blob.IBlobServiceContract">
+  
+  
+  <h1 id="O3_Gcs_Blob_IBlobServiceContract" data-uid="O3.Gcs.Blob.IBlobServiceContract" class="text-break">Interface IBlobServiceContract
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose">IDisposable.Dispose()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="O3.Gcs.Blob.html">O3.Gcs.Blob</a></h6>
+  <h6><strong>Assembly</strong>: O3.Gcs.CommonLib.Blob.dll</h6>
+  <h5 id="O3_Gcs_Blob_IBlobServiceContract_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBlobServiceContract : IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_ContentByLinkGetAllAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.ContentByLinkGetAllAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_ContentByLinkGetAllAsync_System_String_System_Nullable_System_Int64__DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.ContentByLinkGetAllAsync(System.String,System.Nullable{System.Int64},DigitalFlare.Context.IContext)">ContentByLinkGetAllAsync(String, Nullable&lt;Int64&gt;, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;BlobLinkContentReading&gt;&gt; ContentByLinkGetAllAsync(string name, long? entityId, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="O3.Gcs.Blob.BlobLinkContentReading.html">BlobLinkContentReading</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_ContentByLinkGetSingleAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.ContentByLinkGetSingleAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_ContentByLinkGetSingleAsync_System_String_System_Nullable_System_Int64__DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.ContentByLinkGetSingleAsync(System.String,System.Nullable{System.Int64},DigitalFlare.Context.IContext)">ContentByLinkGetSingleAsync(String, Nullable&lt;Int64&gt;, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;BlobLinkContentReading&gt; ContentByLinkGetSingleAsync(string name, long? entityId, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Blob.BlobLinkContentReading.html">BlobLinkContentReading</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkDeleteAllAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkDeleteAllAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkDeleteAllAsync_System_String_System_Nullable_System_Int64__DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkDeleteAllAsync(System.String,System.Nullable{System.Int64},DigitalFlare.Context.IContext)">LinkDeleteAllAsync(String, Nullable&lt;Int64&gt;, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;BlobLinkkMetadata&gt;&gt; LinkDeleteAllAsync(string name, long? entityId, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkGetAllAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkGetAllAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkGetAllAsync_System_String_System_Nullable_System_Int64__System_Boolean_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkGetAllAsync(System.String,System.Nullable{System.Int64},System.Boolean,DigitalFlare.Context.IContext)">LinkGetAllAsync(String, Nullable&lt;Int64&gt;, Boolean, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;BlobLinkkMetadata&gt;&gt; LinkGetAllAsync(string name, long? entityId, bool includeBlobMetadata = false, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">includeBlobMetadata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkGetSingleAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkGetSingleAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkGetSingleAsync_System_String_System_Nullable_System_Int64__System_Boolean_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkGetSingleAsync(System.String,System.Nullable{System.Int64},System.Boolean,DigitalFlare.Context.IContext)">LinkGetSingleAsync(String, Nullable&lt;Int64&gt;, Boolean, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;BlobLinkkMetadata&gt; LinkGetSingleAsync(string name, long? entityId, bool includeBlobMetadata = false, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">includeBlobMetadata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkGetSingleOrDefaultAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkGetSingleOrDefaultAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkGetSingleOrDefaultAsync_System_String_System_Nullable_System_Int64__System_Boolean_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkGetSingleOrDefaultAsync(System.String,System.Nullable{System.Int64},System.Boolean,DigitalFlare.Context.IContext)">LinkGetSingleOrDefaultAsync(String, Nullable&lt;Int64&gt;, Boolean, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;BlobLinkkMetadata? &gt; LinkGetSingleOrDefaultAsync(string name, long? entityId, bool includeBlobMetadata = false, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">includeBlobMetadata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_System_String_System_Nullable_System_Int64__O3_Gcs_Blob_Data_Model_BlobLinkkMetadata_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync(System.String,System.Nullable{System.Int64},O3.Gcs.Blob.Data.Model.BlobLinkkMetadata,DigitalFlare.Context.IContext)">LinkSetAsync(String, Nullable&lt;Int64&gt;, BlobLinkkMetadata, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;BlobLinkkMetadata&gt; LinkSetAsync(string name, long? entityId, BlobLinkkMetadata blob, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a></td>
+        <td><span class="parametername">blob</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_System_String_System_Nullable_System_Int64__System_Collections_Generic_IEnumerable_O3_Gcs_Blob_Data_Model_BlobLinkkMetadata__DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync(System.String,System.Nullable{System.Int64},System.Collections.Generic.IEnumerable{O3.Gcs.Blob.Data.Model.BlobLinkkMetadata},DigitalFlare.Context.IContext)">LinkSetAsync(String, Nullable&lt;Int64&gt;, IEnumerable&lt;BlobLinkkMetadata&gt;, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;BlobLinkkMetadata&gt;&gt; LinkSetAsync(string name, long? entityId, IEnumerable&lt;BlobLinkkMetadata&gt; blobs, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;</td>
+        <td><span class="parametername">blobs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_System_String_System_Nullable_System_Int64__System_Collections_Generic_IEnumerable_System_ValueTuple_System_IO_Stream_System_String_System_String_System_String_System_String_System_Boolean___DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync(System.String,System.Nullable{System.Int64},System.Collections.Generic.IEnumerable{System.ValueTuple{System.IO.Stream,System.String,System.String,System.String,System.String,System.Boolean}},DigitalFlare.Context.IContext)">LinkSetAsync(String, Nullable&lt;Int64&gt;, IEnumerable&lt;(Stream content, String mediaType, String charset, String linkDisplayNameTag, String linkSystemNameTag, Boolean encrypt)&gt;, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;BlobLinkkMetadata&gt;&gt; LinkSetAsync(string name, long? entityId, IEnumerable&lt;(Stream content, string mediaType, string charset, string linkDisplayNameTag, string linkSystemNameTag, bool encrypt)&gt; blobs, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-6">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;&gt;</td>
+        <td><span class="parametername">blobs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_System_String_System_Nullable_System_Int64__System_Collections_Generic_IEnumerable_System_ValueTuple_System_IO_Stream_System_String_System_String_System_String_System_String___System_Boolean_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync(System.String,System.Nullable{System.Int64},System.Collections.Generic.IEnumerable{System.ValueTuple{System.IO.Stream,System.String,System.String,System.String,System.String}},System.Boolean,DigitalFlare.Context.IContext)">LinkSetAsync(String, Nullable&lt;Int64&gt;, IEnumerable&lt;(Stream content, String mediaType, String charset, String linkDisplayNameTag, String linkSystemNameTag)&gt;, Boolean, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;BlobLinkkMetadata&gt;&gt; LinkSetAsync(string name, long? entityId, IEnumerable&lt;(Stream content, string mediaType, string charset, string linkDisplayNameTag, string linkSystemNameTag)&gt; blobs, bool encrypt, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-5">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">blobs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">encrypt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_System_String_System_Nullable_System_Int64__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String_System_Boolean___DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync(System.String,System.Nullable{System.Int64},System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String,System.Boolean}},DigitalFlare.Context.IContext)">LinkSetAsync(String, Nullable&lt;Int64&gt;, IEnumerable&lt;(String contentText, String linkSystemNameTag, Boolean encrypt)&gt;, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;BlobLinkkMetadata&gt;&gt; LinkSetAsync(string name, long? entityId, IEnumerable&lt;(string contentText, string linkSystemNameTag, bool encrypt)&gt; blobs, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-3">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;&gt;</td>
+        <td><span class="parametername">blobs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_System_String_System_Nullable_System_Int64__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String_System_String_System_Boolean___DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync(System.String,System.Nullable{System.Int64},System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String,System.String,System.Boolean}},DigitalFlare.Context.IContext)">LinkSetAsync(String, Nullable&lt;Int64&gt;, IEnumerable&lt;(String contentText, String linkDisplayNameTag, String linkSystemNameTag, Boolean encrypt)&gt;, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;BlobLinkkMetadata&gt;&gt; LinkSetAsync(string name, long? entityId, IEnumerable&lt;(string contentText, string linkDisplayNameTag, string linkSystemNameTag, bool encrypt)&gt; blobs, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-4">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;&gt;</td>
+        <td><span class="parametername">blobs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_System_String_System_Nullable_System_Int64__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String_System_String___System_Boolean_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync(System.String,System.Nullable{System.Int64},System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String,System.String}},System.Boolean,DigitalFlare.Context.IContext)">LinkSetAsync(String, Nullable&lt;Int64&gt;, IEnumerable&lt;(String contentText, String linkDisplayNameTag, String linkSystemNameTag)&gt;, Boolean, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;BlobLinkkMetadata&gt;&gt; LinkSetAsync(string name, long? entityId, IEnumerable&lt;(string contentText, string linkDisplayNameTag, string linkSystemNameTag)&gt; blobs, bool encrypt, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-3">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">blobs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">encrypt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_System_String_System_Nullable_System_Int64__System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___System_Boolean_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync(System.String,System.Nullable{System.Int64},System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}},System.Boolean,DigitalFlare.Context.IContext)">LinkSetAsync(String, Nullable&lt;Int64&gt;, IEnumerable&lt;(String contentText, String linkSystemNameTag)&gt;, Boolean, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;BlobLinkkMetadata&gt;&gt; LinkSetAsync(string name, long? entityId, IEnumerable&lt;(string contentText, string linkSystemNameTag)&gt; blobs, bool encrypt, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-2">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">blobs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">encrypt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_System_String_System_Nullable_System_Int64__System_String_System_Boolean_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync(System.String,System.Nullable{System.Int64},System.String,System.Boolean,DigitalFlare.Context.IContext)">LinkSetAsync(String, Nullable&lt;Int64&gt;, String, Boolean, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;BlobLinkkMetadata&gt; LinkSetAsync(string name, long? entityId, string content, bool encrypt, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">encrypt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_System_String_System_Nullable_System_Int64__System_ValueTuple_System_IO_Stream_System_String_System_String_System_String_System_String__System_Boolean_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync(System.String,System.Nullable{System.Int64},System.ValueTuple{System.IO.Stream,System.String,System.String,System.String,System.String},System.Boolean,DigitalFlare.Context.IContext)">LinkSetAsync(String, Nullable&lt;Int64&gt;, (Stream content, String mediaType, String charset, String linkDisplayNameTag, String linkSystemNameTag), Boolean, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;BlobLinkkMetadata&gt; LinkSetAsync(string name, long? entityId, (Stream content, string mediaType, string charset, string linkDisplayNameTag, string linkSystemNameTag)blob, bool encrypt, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-5">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">blob</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">encrypt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_System_String_System_Nullable_System_Int64__System_ValueTuple_System_IO_Stream_System_String_System_String_System_String__System_Boolean_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync(System.String,System.Nullable{System.Int64},System.ValueTuple{System.IO.Stream,System.String,System.String,System.String},System.Boolean,DigitalFlare.Context.IContext)">LinkSetAsync(String, Nullable&lt;Int64&gt;, (Stream content, String mediaType, String linkDisplayNameTag, String linkSystemNameTag), Boolean, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;BlobLinkkMetadata&gt; LinkSetAsync(string name, long? entityId, (Stream content, string mediaType, string linkDisplayNameTag, string linkSystemNameTag)blob, bool encrypt, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-4">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">blob</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">encrypt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync*"></a>
+  <h4 id="O3_Gcs_Blob_IBlobServiceContract_LinkSetAsync_System_String_System_Nullable_System_Int64__System_ValueTuple_System_String_System_String_System_String__System_Boolean_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Blob.IBlobServiceContract.LinkSetAsync(System.String,System.Nullable{System.Int64},System.ValueTuple{System.String,System.String,System.String},System.Boolean,DigitalFlare.Context.IContext)">LinkSetAsync(String, Nullable&lt;Int64&gt;, (String contentText, String linkDisplayNameTag, String linkSystemNameTag), Boolean, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;BlobLinkkMetadata&gt; LinkSetAsync(string name, long? entityId, (string contentText, string linkDisplayNameTag, string linkSystemNameTag)blob, bool encrypt, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.valuetuple-3">ValueTuple</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">blob</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">encrypt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Blob.Data.Model.BlobLinkkMetadata.html">BlobLinkkMetadata</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="O3.Gcs.Diagnostics.Metrics.MetricUtilities.html#O3_Gcs_Diagnostics_Metrics_MetricUtilities_GetMetricComponentName_System_Object_">MetricUtilities.GetMetricComponentName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            ©LLC Ozon Technology
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

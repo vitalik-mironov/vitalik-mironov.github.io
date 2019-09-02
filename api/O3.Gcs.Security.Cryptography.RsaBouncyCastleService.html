@@ -1,0 +1,668 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RsaBouncyCastleService
+   | Common-Lib docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RsaBouncyCastleService
+   | Common-Lib docs ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService">
+  
+  
+  <h1 id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService" class="text-break">Class RsaBouncyCastleService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">DigitalFlare.Disposable</span></div>
+    <div class="level2"><a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html">ComponentBase</a></div>
+    <div class="level3"><span class="xref">RsaBouncyCastleService</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">DigitalFlare.IOxyDisposable</span></div>
+    <div><a class="xref" href="O3.Gcs.Diagnostics.Metrics.Prometheus.IPrometheusMetricRepositoryGetter.html">IPrometheusMetricRepositoryGetter</a></div>
+    <div><a class="xref" href="O3.Gcs.ComponentModel.IComponentNameProperty.html">IComponentNameProperty</a></div>
+    <div><a class="xref" href="O3.Gcs.Security.Cryptography.IRsaService.html">IRsaService</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_ComponentNameMaxLength">ComponentBase.ComponentNameMaxLength</a>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_ComponentName">ComponentBase.ComponentName</a>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_ServiceProvider">ComponentBase.ServiceProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_Logger">ComponentBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_PrometheusMetricRepository">ComponentBase.PrometheusMetricRepository</a>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_O3_Gcs_Diagnostics_Metrics_Prometheus_IPrometheusMetricRepositoryGetter_Get">ComponentBase.IPrometheusMetricRepositoryGetter.Get()</a>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_CreateComponentName">ComponentBase.CreateComponentName()</a>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_RequireOwnServiceScope">ComponentBase.RequireOwnServiceScope()</a>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_FireAfterDisposed_System_Boolean_">ComponentBase.FireAfterDisposed(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_ToString">ComponentBase.ToString()</a>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.SetDisposeRequested()</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.EnsureNotDisposeState()</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.DigitalFlare.IOxyDisposable.EnsureNotDisposeState()</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.EnsureNotDisposeState(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.FireBeforeDispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.ReadDA&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.ReadDA&lt;T&gt;(T, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.TryReadDA&lt;T&gt;(T, System.Boolean, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.TryReadDA&lt;T&gt;(T, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.TryReadDA&lt;T&gt;(T, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.TryReadDA&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.TryReadDA&lt;T&gt;(DigitalFlare.IVh&lt;T&gt;, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.WriteDA&lt;T&gt;(T, T, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.WriteDA&lt;T&gt;(T, T, T, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.WriteDA&lt;T&gt;(T, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.TryWriteDA&lt;T&gt;(T, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.TryWriteDA&lt;T&gt;(T, T, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.TryWriteDA&lt;T&gt;(T, T, T, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.TryWriteDA&lt;T&gt;(T, T, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.InitDA&lt;T&gt;(T, System.Func&lt;T&gt;, System.Action&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.InitDA&lt;T&gt;(T, DigitalFlare.OutParamFunc&lt;T&gt;, System.Action&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.InitDA&lt;T&gt;(DigitalFlare.IVh&lt;T&gt;, DigitalFlare.OutParamFunc&lt;DigitalFlare.IVh&lt;T&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.InitDA&lt;T&gt;(DigitalFlare.IVh&lt;T&gt;, System.Func&lt;DigitalFlare.IVh&lt;T&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.InitDA&lt;T&gt;(DigitalFlare.Vh&lt;T&gt;, DigitalFlare.OutParamFunc&lt;DigitalFlare.Vh&lt;T&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.InitDA&lt;T&gt;(DigitalFlare.Vh&lt;T&gt;, System.Func&lt;DigitalFlare.Vh&lt;T&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.InitDA&lt;T&gt;(DigitalFlare.VhClass&lt;T&gt;, DigitalFlare.OutParamFunc&lt;T&gt;, System.Action&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.InitDA&lt;T&gt;(DigitalFlare.VhClass&lt;T&gt;, System.Func&lt;T&gt;, System.Action&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.InitDANullable&lt;T&gt;(DigitalFlare.VhClass&lt;T&gt;, DigitalFlare.OutParamFunc&lt;T&gt;, System.Action&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.InitDANullable&lt;T&gt;(DigitalFlare.VhClass&lt;T&gt;, System.Func&lt;T&gt;, System.Action&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDABool&lt;T&gt;(T, DigitalFlare.Transform&lt;T&gt;, System.Action&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDABool&lt;T&gt;(T, DigitalFlare.Transform&lt;T&gt;, T, System.Action&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDA&lt;T&gt;(T, DigitalFlare.Transform&lt;T&gt;, DigitalFlare.Threading.InterlockedUpdateResult&lt;T&gt;, System.Action&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDA&lt;T&gt;(T, DigitalFlare.Transform&lt;T&gt;, System.Action&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDABool&lt;T&gt;(T, DigitalFlare.Transform2&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDABool&lt;T&gt;(T, DigitalFlare.Transform2&lt;T&gt;, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDA&lt;T&gt;(T, DigitalFlare.Transform2&lt;T&gt;, DigitalFlare.Threading.InterlockedUpdateResult&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDA&lt;T&gt;(T, DigitalFlare.Transform2&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDABool&lt;T&gt;(T, T, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDABool&lt;T&gt;(T, T, T, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDAIfNullBool&lt;T&gt;(T, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDAIfNullBool&lt;T&gt;(T, T, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDAIfNullBool&lt;T&gt;(T, System.Func&lt;T&gt;, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDAIfNull&lt;T&gt;(T, T)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDAIfNull&lt;T&gt;(T, System.Func&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.UpdDA&lt;T, TState&gt;(T, TState, DigitalFlare.TransformStateful&lt;T, TState&gt;, DigitalFlare.TransformCleanupStateful&lt;T, TState&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.AddEventHandler&lt;TEventArgs&gt;(System.EventHandler&lt;TEventArgs&gt;, System.EventHandler&lt;TEventArgs&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.AddEventHandler(System.EventHandler, System.EventHandler)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.RemoveEventHandler&lt;TEventArgs&gt;(System.EventHandler&lt;TEventArgs&gt;, System.EventHandler&lt;TEventArgs&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.RemoveEventHandler(System.EventHandler, System.EventHandler)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.EnumerateDA&lt;T&gt;(T[])</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.EnumerateDA&lt;T&gt;(T[], System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.EnumerateDA&lt;T&gt;(System.Collections.Generic.IEnumerable&lt;T&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.EnumerateDA&lt;T&gt;(System.Collections.Generic.IEnumerable&lt;T&gt;, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.OnDeserializing(System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.OnDeserialized(System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.IsDisposeRequested</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.Disposing</span>
+    </div>
+    <div>
+      <span class="xref">DigitalFlare.Disposable.IsDisposed</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="O3.Gcs.Security.Cryptography.html">O3.Gcs.Security.Cryptography</a></h6>
+  <h6><strong>Assembly</strong>: O3.Gcs.CommonLib.Security.Cryptography.BouncyCastle.dll</h6>
+  <h5 id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RsaBouncyCastleService : ComponentBase, IOxyDisposable, IPrometheusMetricRepositoryGetter, IComponentNameProperty, IRsaService, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService__ctor_" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.#ctor*"></a>
+  <h4 id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService__ctor_System_IServiceProvider_" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.#ctor(System.IServiceProvider)">RsaBouncyCastleService(IServiceProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RsaBouncyCastleService(IServiceProvider serviceProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="parametername">serviceProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService__ctor_" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.#ctor*"></a>
+  <h4 id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService__ctor_System_IServiceProvider_DigitalFlare_Threading_TimeoutDuration_" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.#ctor(System.IServiceProvider,DigitalFlare.Threading.TimeoutDuration)">RsaBouncyCastleService(IServiceProvider, TimeoutDuration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RsaBouncyCastleService(IServiceProvider serviceProvider, TimeoutDuration keyCacheEntryTtl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="parametername">serviceProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Threading.TimeoutDuration</span></td>
+        <td><span class="parametername">keyCacheEntryTtl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService_DefaultKeyCacheEntryTtl" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.DefaultKeyCacheEntryTtl">DefaultKeyCacheEntryTtl</h4>
+  <div class="markdown level1 summary">
+Значение: &apos;0.03:00:00.0&apos;.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly TimeoutDuration DefaultKeyCacheEntryTtl</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DigitalFlare.Threading.TimeoutDuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService_KeyCacheEntryTtl_" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.KeyCacheEntryTtl*"></a>
+  <h4 id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService_KeyCacheEntryTtl" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.KeyCacheEntryTtl">KeyCacheEntryTtl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeoutDuration KeyCacheEntryTtl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DigitalFlare.Threading.TimeoutDuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService_SecretTextSubstitutionHandler_" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.SecretTextSubstitutionHandler*"></a>
+  <h4 id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService_SecretTextSubstitutionHandler" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.SecretTextSubstitutionHandler">SecretTextSubstitutionHandler</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ISecretTextSubstitutionHandler SecretTextSubstitutionHandler { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DigitalFlare.Security.Cryptography.ISecretTextSubstitutionHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService_DecryptAsync_" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.DecryptAsync*"></a>
+  <h4 id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService_DecryptAsync_System_ArraySegment_System_Byte__O3_Gcs_Security_Cryptography_ICipherKeyBlobSettings_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.DecryptAsync(System.ArraySegment{System.Byte},O3.Gcs.Security.Cryptography.ICipherKeyBlobSettings,DigitalFlare.Context.IContext)">DecryptAsync(ArraySegment&lt;Byte&gt;, ICipherKeyBlobSettings, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;byte[]&gt; DecryptAsync(ArraySegment&lt;byte&gt; buffer, ICipherKeyBlobSettings key, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Security.Cryptography.ICipherKeyBlobSettings.html">ICipherKeyBlobSettings</a></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService_Dispose_" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.Dispose*"></a>
+  <h4 id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService_Dispose_System_Boolean_" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool explicitDispose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">explicitDispose</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_Dispose_System_Boolean_">ComponentBase.Dispose(Boolean)</a></div>
+  
+  
+  <a id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService_EncryptAsync_" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.EncryptAsync*"></a>
+  <h4 id="O3_Gcs_Security_Cryptography_RsaBouncyCastleService_EncryptAsync_System_ArraySegment_System_Byte__O3_Gcs_Security_Cryptography_ICipherKeyBlobSettings_DigitalFlare_Context_IContext_" data-uid="O3.Gcs.Security.Cryptography.RsaBouncyCastleService.EncryptAsync(System.ArraySegment{System.Byte},O3.Gcs.Security.Cryptography.ICipherKeyBlobSettings,DigitalFlare.Context.IContext)">EncryptAsync(ArraySegment&lt;Byte&gt;, ICipherKeyBlobSettings, IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;byte[]&gt; EncryptAsync(ArraySegment&lt;byte&gt; buffer, ICipherKeyBlobSettings key, IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.arraysegment-1">ArraySegment</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>&gt;</td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Security.Cryptography.ICipherKeyBlobSettings.html">ICipherKeyBlobSettings</a></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Context.IContext</span></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">DigitalFlare.IOxyDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="O3.Gcs.Diagnostics.Metrics.Prometheus.IPrometheusMetricRepositoryGetter.html">IPrometheusMetricRepositoryGetter</a>
+  </div>
+  <div>
+      <a class="xref" href="O3.Gcs.ComponentModel.IComponentNameProperty.html">IComponentNameProperty</a>
+  </div>
+  <div>
+      <a class="xref" href="O3.Gcs.Security.Cryptography.IRsaService.html">IRsaService</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="O3.Gcs.Diagnostics.Metrics.MetricUtilities.html#O3_Gcs_Diagnostics_Metrics_MetricUtilities_GetMetricComponentName_System_Object_">MetricUtilities.GetMetricComponentName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            ©LLC Ozon Technology
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

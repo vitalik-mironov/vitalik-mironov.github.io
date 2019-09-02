@@ -1,0 +1,617 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ComponentUtilities
+   | Common-Lib docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ComponentUtilities
+   | Common-Lib docs ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="O3.Gcs.ComponentModel.ComponentUtilities">
+  
+  
+  <h1 id="O3_Gcs_ComponentModel_ComponentUtilities" data-uid="O3.Gcs.ComponentModel.ComponentUtilities" class="text-break">Class ComponentUtilities
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ComponentUtilities</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="O3.Gcs.ComponentModel.html">O3.Gcs.ComponentModel</a></h6>
+  <h6><strong>Assembly</strong>: O3.Gcs.CommonLib.Core.dll</h6>
+  <h5 id="O3_Gcs_ComponentModel_ComponentUtilities_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ComponentUtilities</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="O3_Gcs_ComponentModel_ComponentUtilities_ComponentNameCompare" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.ComponentNameCompare">ComponentNameCompare</h4>
+  <div class="markdown level1 summary">
+Дефолтный компаратор имени компонента — <a class="xref" href="O3.Gcs.ComponentModel.IComponentNameProperty.html#O3_Gcs_ComponentModel_IComponentNameProperty_ComponentName">ComponentName</a>.
+<p>Значение: <span class="xref">DigitalFlare.StringCompareOp.OrdinalCI</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly StringCompareOp ComponentNameCompare</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DigitalFlare.StringCompareOp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="O3_Gcs_ComponentModel_ComponentUtilities_CreateComponentFromSettings_" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.CreateComponentFromSettings*"></a>
+  <h4 id="O3_Gcs_ComponentModel_ComponentUtilities_CreateComponentFromSettings__1_O3_Gcs_ComponentModel_ComponentBase_DigitalFlare_Description_ISettings_" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.CreateComponentFromSettings``1(O3.Gcs.ComponentModel.ComponentBase,DigitalFlare.Description.ISettings)">CreateComponentFromSettings&lt;TContract&gt;(ComponentBase, ISettings)</h4>
+  <div class="markdown level1 summary">
+Создает компонент, реализующий <code data-dev-comment-type="typeparamref" class="typeparamref">TContract</code>, используя указанные настройки.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TContract CreateComponentFromSettings&lt;TContract&gt;(this ComponentBase component, ISettings settings)
+    where TContract : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html">ComponentBase</a></td>
+        <td><span class="parametername">component</span></td>
+        <td>
+Компонент, предоставляющий контейнер DI <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a> (см. <a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_ServiceProvider">ServiceProvider</a>), в свою очередь поставляющий зависимость <a class="xref" href="O3.Gcs.ComponentModel.IComponentActivator.html">IComponentActivator</a>.
+<p>Этот же контейнер DI будет передан создаваемому компоненту.</p>
+<p>Не может быть <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Description.ISettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td>
+Настройки создаваемого компонента.
+<p>Не может быть <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TContract</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContract</span></td>
+        <td>Ограничение типа создаваемого компонента.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_ComponentModel_ComponentUtilities_CreateComponentFromSettings_" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.CreateComponentFromSettings*"></a>
+  <h4 id="O3_Gcs_ComponentModel_ComponentUtilities_CreateComponentFromSettings__1_System_IServiceProvider_DigitalFlare_Description_ISettings_" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.CreateComponentFromSettings``1(System.IServiceProvider,DigitalFlare.Description.ISettings)">CreateComponentFromSettings&lt;TContract&gt;(IServiceProvider, ISettings)</h4>
+  <div class="markdown level1 summary">
+Создает компонент, реализующий <code data-dev-comment-type="typeparamref" class="typeparamref">TContract</code>, используя указанные настройки.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TContract CreateComponentFromSettings&lt;TContract&gt;(this IServiceProvider sp, ISettings settings)
+    where TContract : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="parametername">sp</span></td>
+        <td>
+Контейнер DI, поставляющий зависимость <a class="xref" href="O3.Gcs.ComponentModel.IComponentActivator.html">IComponentActivator</a>.
+<p>Этот же контейнер DI будет передан создаваемому компоненту.</p>
+<p>Не может быть <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Description.ISettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td>
+Настройки создаваемого компонента.
+<p>Не может быть <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TContract</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContract</span></td>
+        <td>Ограничение типа создаваемого компонента.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_ComponentModel_ComponentUtilities_CreateComponentFromSettingsConcrete_" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.CreateComponentFromSettingsConcrete*"></a>
+  <h4 id="O3_Gcs_ComponentModel_ComponentUtilities_CreateComponentFromSettingsConcrete__1_O3_Gcs_ComponentModel_ComponentBase_System_Type_DigitalFlare_Description_ISettings_" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.CreateComponentFromSettingsConcrete``1(O3.Gcs.ComponentModel.ComponentBase,System.Type,DigitalFlare.Description.ISettings)">CreateComponentFromSettingsConcrete&lt;TContract&gt;(ComponentBase, Type, ISettings)</h4>
+  <div class="markdown level1 summary">
+Создает компонент типа <code data-dev-comment-type="paramref" class="paramref">concreteType</code>, реализующий тип <code data-dev-comment-type="typeparamref" class="typeparamref">TContract</code> из указанных настроек <code data-dev-comment-type="paramref" class="paramref">settings</code>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TContract CreateComponentFromSettingsConcrete&lt;TContract&gt;(this ComponentBase component, Type concreteType, ISettings settings)
+    where TContract : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html">ComponentBase</a></td>
+        <td><span class="parametername">component</span></td>
+        <td>
+Компонент, предоставляющий контейнер DI <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a> (см. <a class="xref" href="O3.Gcs.ComponentModel.ComponentBase.html#O3_Gcs_ComponentModel_ComponentBase_ServiceProvider">ServiceProvider</a>), в свою очередь поставляющий зависимость <a class="xref" href="O3.Gcs.ComponentModel.IComponentActivator.html">IComponentActivator</a>.
+<p>Этот же контейнер DI будет передан создаваемому компоненту.</p>
+<p>Не может быть <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">concreteType</span></td>
+        <td>
+Конкретный тип компонента.
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Description.ISettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td>
+Настройки компонента.
+<p>Не может быть <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TContract</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContract</span></td>
+        <td>Ограничение типа создаваемого компонента.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_ComponentModel_ComponentUtilities_CreateComponentFromSettingsConcrete_" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.CreateComponentFromSettingsConcrete*"></a>
+  <h4 id="O3_Gcs_ComponentModel_ComponentUtilities_CreateComponentFromSettingsConcrete__1_System_IServiceProvider_System_Type_DigitalFlare_Description_ISettings_" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.CreateComponentFromSettingsConcrete``1(System.IServiceProvider,System.Type,DigitalFlare.Description.ISettings)">CreateComponentFromSettingsConcrete&lt;TContract&gt;(IServiceProvider, Type, ISettings)</h4>
+  <div class="markdown level1 summary">
+Создает компонент типа <code data-dev-comment-type="paramref" class="paramref">concreteType</code>, реализующий тип <code data-dev-comment-type="typeparamref" class="typeparamref">TContract</code> из указанных настроек <code data-dev-comment-type="paramref" class="paramref">settings</code>.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TContract CreateComponentFromSettingsConcrete&lt;TContract&gt;(this IServiceProvider sp, Type concreteType, ISettings settings)
+    where TContract : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="parametername">sp</span></td>
+        <td>
+Контейнер DI, поставляющий зависимость <a class="xref" href="O3.Gcs.ComponentModel.IComponentActivator.html">IComponentActivator</a>.
+<p>Этот же контейнер DI будет передан создаваемому компоненту.</p>
+<p>Не может быть <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">concreteType</span></td>
+        <td>
+Конкретный тип компонента.
+<p>Не может быть <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DigitalFlare.Description.ISettings</span></td>
+        <td><span class="parametername">settings</span></td>
+        <td>
+Настройки компонента.
+<p>Не может быть <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TContract</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContract</span></td>
+        <td>Ограничение типа компонента.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_ComponentModel_ComponentUtilities_ResolveSettingsPath_" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.ResolveSettingsPath*"></a>
+  <h4 id="O3_Gcs_ComponentModel_ComponentUtilities_ResolveSettingsPath__1_DigitalFlare_ArgumentUtilitiesHandle_O3_Gcs_ComponentModel_PropertyPath__O3_Gcs_ComponentModel_IComponent_DigitalFlare_Description_ISettings__" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.ResolveSettingsPath``1(DigitalFlare.ArgumentUtilitiesHandle{O3.Gcs.ComponentModel.PropertyPath},O3.Gcs.ComponentModel.IComponent{DigitalFlare.Description.ISettings})">ResolveSettingsPath&lt;TSettings&gt;(ArgumentUtilitiesHandle&lt;PropertyPath&gt;, IComponent&lt;ISettings&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TSettings ResolveSettingsPath&lt;TSettings&gt;(this ArgumentUtilitiesHandle&lt;PropertyPath&gt; path, IComponent&lt;ISettings&gt; component)
+    where TSettings : class, ISettings</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DigitalFlare.ArgumentUtilitiesHandle</span>&lt;<a class="xref" href="O3.Gcs.ComponentModel.PropertyPath.html">PropertyPath</a>&gt;</td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.ComponentModel.IComponent-1.html">IComponent</a>&lt;<span class="xref">DigitalFlare.Description.ISettings</span>&gt;</td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_ComponentModel_ComponentUtilities_ResolveSettingsPath_" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.ResolveSettingsPath*"></a>
+  <h4 id="O3_Gcs_ComponentModel_ComponentUtilities_ResolveSettingsPath__1_O3_Gcs_ComponentModel_PropertyPath_O3_Gcs_ComponentModel_IComponent_DigitalFlare_Description_ISettings__" data-uid="O3.Gcs.ComponentModel.ComponentUtilities.ResolveSettingsPath``1(O3.Gcs.ComponentModel.PropertyPath,O3.Gcs.ComponentModel.IComponent{DigitalFlare.Description.ISettings})">ResolveSettingsPath&lt;TSettings&gt;(PropertyPath, IComponent&lt;ISettings&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TSettings ResolveSettingsPath&lt;TSettings&gt;(this PropertyPath path, IComponent&lt;ISettings&gt; component)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.ComponentModel.PropertyPath.html">PropertyPath</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.ComponentModel.IComponent-1.html">IComponent</a>&lt;<span class="xref">DigitalFlare.Description.ISettings</span>&gt;</td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            ©LLC Ozon Technology
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

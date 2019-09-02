@@ -1,0 +1,1703 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class XAppBase
+   | Oxy API reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class XAppBase
+   | Oxy API reference ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DigitalFlare.XAppBase">
+  
+  
+  <h1 id="DigitalFlare_XAppBase" data-uid="DigitalFlare.XAppBase" class="text-break">Class XAppBase
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="DigitalFlare.Disposable.html">Disposable</a></div>
+    <div class="level2"><a class="xref" href="DigitalFlare.DisposeNotifying.html">DisposeNotifying</a></div>
+    <div class="level3"><a class="xref" href="DigitalFlare.ComponentModel.Dependencies.DependencySupport.html">DependencySupport</a></div>
+    <div class="level4"><a class="xref" href="DigitalFlare.XInstanceBase.html">XInstanceBase</a></div>
+    <div class="level5"><a class="xref" href="DigitalFlare.XInstanceBase-1.html">XInstanceBase</a>&lt;<a class="xref" href="DigitalFlare.Description.IXAppDescription.html">IXAppDescription</a>&gt;</div>
+    <div class="level6"><span class="xref">XAppBase</span></div>
+      <div class="level7"><a class="xref" href="DigitalFlare.XAppBase-1.html">XAppBase&lt;TDescription&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="DigitalFlare.IXApp-1.html">IXApp</a>&lt;<a class="xref" href="DigitalFlare.Description.IXAppDescription.html">IXAppDescription</a>&gt;</div>
+    <div><a class="xref" href="DigitalFlare.IXAppScopeInstance-1.html">IXAppScopeInstance</a>&lt;<a class="xref" href="DigitalFlare.Description.IXAppDescription.html">IXAppDescription</a>&gt;</div>
+    <div><a class="xref" href="DigitalFlare.IXAppScopeInstance.html">IXAppScopeInstance</a></div>
+    <div><a class="xref" href="DigitalFlare.IXInstance-1.html">IXInstance</a>&lt;<a class="xref" href="DigitalFlare.Description.IXAppDescription.html">IXAppDescription</a>&gt;</div>
+    <div><a class="xref" href="DigitalFlare.IXInstance.html">IXInstance</a></div>
+    <div><a class="xref" href="DigitalFlare.IDisposeNotifying.html">IDisposeNotifying</a></div>
+    <div><a class="xref" href="DigitalFlare.IOxyDisposable.html">IOxyDisposable</a></div>
+    <div><a class="xref" href="DigitalFlare.ComponentModel.Dependencies.IDisposableDependencySupport.html">IDisposableDependencySupport</a></div>
+    <div><a class="xref" href="DigitalFlare.ComponentModel.Dependencies.IDependencySupport.html">IDependencySupport</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="DigitalFlare.ComponentModel.IInitializable.html">IInitializable</a></div>
+    <div><a class="xref" href="DigitalFlare.ITextViewSupport.html">ITextViewSupport</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase-1.html#DigitalFlare_XInstanceBase_1_Description">XInstanceBase&lt;IXAppDescription&gt;.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_DefaultInitializationTimeout">XInstanceBase.DefaultInitializationTimeout</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_State">XInstanceBase.State</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_HasDescription">XInstanceBase.HasDescription</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_DescriptionDisposeTolerant">XInstanceBase.DescriptionDisposeTolerant</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_Scope">XInstanceBase.Scope</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_ScopeDisposeTolerant">XInstanceBase.ScopeDisposeTolerant</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_ScopedInstances">XInstanceBase.ScopedInstances</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_ScopedInstancesDisposeTolerant">XInstanceBase.ScopedInstancesDisposeTolerant</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_EnsureInitialized">XInstanceBase.EnsureInitialized()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_DigitalFlare_IXInstance_EnsureInitialized">XInstanceBase.IXInstance.EnsureInitialized()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_ReadIA__1___0__System_Boolean_System_String_System_Boolean_">XInstanceBase.ReadIA&lt;T&gt;(T, Boolean, String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_RegisterInitialization_DigitalFlare_XInstanceInitialization_">XInstanceBase.RegisterInitialization(XInstanceInitialization)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_InitializationTimeout">XInstanceBase.InitializationTimeout</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_Initialize">XInstanceBase.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_InitializeAsync">XInstanceBase.InitializeAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_InitializeAsync_System_Threading_CancellationToken_">XInstanceBase.InitializeAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_InitializeAsync_DigitalFlare_Context_IContext_">XInstanceBase.InitializeAsync(IContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_ExecuteInitialization_System_Func_DigitalFlare_Context_IContext_System_Threading_Tasks_Task__DigitalFlare_Context_IContext_">XInstanceBase.ExecuteInitialization(Func&lt;IContext, Task&gt;, IContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_ChangeState_DigitalFlare_XInstanceStates_">XInstanceBase.ChangeState(XInstanceStates)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_EnsureCreatedState">XInstanceBase.EnsureCreatedState()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_EnsureNotFaultedState">XInstanceBase.EnsureNotFaultedState()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_CreateScopedInstance__1_DigitalFlare_Description_IDescription_System_Type_System_Boolean_">XInstanceBase.CreateScopedInstance&lt;TInstance&gt;(IDescription, Type, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_CreateScopedInstance__2_DigitalFlare_Description_IDescription___0_System_Type_System_Boolean_">XInstanceBase.CreateScopedInstance&lt;TArg1, TInstance&gt;(IDescription, TArg1, Type, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_CreateScopedInstance__3_DigitalFlare_Description_IDescription___0___1_System_Type_System_Boolean_">XInstanceBase.CreateScopedInstance&lt;TArg1, TArg2, TInstance&gt;(IDescription, TArg1, TArg2, Type, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_CreateScopedInstance__4_DigitalFlare_Description_IDescription___0___1___2_System_Type_System_Boolean_">XInstanceBase.CreateScopedInstance&lt;TArg1, TArg2, TArg3, TInstance&gt;(IDescription, TArg1, TArg2, TArg3, Type, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_CreateScopedInstance__5_DigitalFlare_Description_IDescription___0___1___2___3_System_Type_System_Boolean_">XInstanceBase.CreateScopedInstance&lt;TArg1, TArg2, TArg3, TArg4, TInstance&gt;(IDescription, TArg1, TArg2, TArg3, TArg4, Type, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_CreateScopedInstance__1_DigitalFlare_Description_IDescription_DigitalFlare_IArgsTuple___0__System_Type_System_Boolean_">XInstanceBase.CreateScopedInstance&lt;TInstance&gt;(IDescription, IArgsTuple, TInstance, Type, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_BuildDependencyExporter_DigitalFlare_ComponentModel_Dependencies_IOuterDependencyScopeGetter_DigitalFlare_IVh_DigitalFlare_ComponentModel_Dependencies_IDependencyExporter___">XInstanceBase.BuildDependencyExporter(IOuterDependencyScopeGetter, IVh&lt;IDependencyExporter&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_ExecuteDependencyResolution_DigitalFlare_ComponentModel_Dependencies_IDependencyResolutionContext_">XInstanceBase.ExecuteDependencyResolution(IDependencyResolutionContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_DigitalFlare_ITextViewSupport_ToShortTextView_System_IFormatProvider_">XInstanceBase.ITextViewSupport.ToShortTextView(IFormatProvider)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_DigitalFlare_ITextViewSupport_ToLongTextView_System_IFormatProvider_">XInstanceBase.ITextViewSupport.ToLongTextView(IFormatProvider)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_TryGetStateSummary">XInstanceBase.TryGetStateSummary()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.ComponentModel.Dependencies.DependencySupport.html#DigitalFlare_ComponentModel_Dependencies_DependencySupport_OuterDependencies">DependencySupport.OuterDependencies</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.ComponentModel.Dependencies.DependencySupport.html#DigitalFlare_ComponentModel_Dependencies_DependencySupport_OuterServiceProvider">DependencySupport.OuterServiceProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.ComponentModel.Dependencies.DependencySupport.html#DigitalFlare_ComponentModel_Dependencies_DependencySupport_BuildDependencyScope_DigitalFlare_ComponentModel_Dependencies_IOuterDependencyScopeGetter_DigitalFlare_ComponentModel_Dependencies_IDependencyExporter_System_Boolean_DigitalFlare_ComponentModel_Dependencies_IDependencyScope__">DependencySupport.BuildDependencyScope(IOuterDependencyScopeGetter, IDependencyExporter, Boolean, IDependencyScope)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.ComponentModel.Dependencies.DependencySupport.html#DigitalFlare_ComponentModel_Dependencies_DependencySupport_GetOuterDependencyScopeGetter_DigitalFlare_ComponentModel_Dependencies_IOuterDependencyScopeGetter__">DependencySupport.GetOuterDependencyScopeGetter(IOuterDependencyScopeGetter)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.ComponentModel.Dependencies.DependencySupport.html#DigitalFlare_ComponentModel_Dependencies_DependencySupport_GetDependencyScope">DependencySupport.GetDependencyScope()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.ComponentModel.Dependencies.DependencySupport.html#DigitalFlare_ComponentModel_Dependencies_DependencySupport_OnDeserialized_System_Runtime_Serialization_StreamingContext_">DependencySupport.OnDeserialized(StreamingContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.DisposeNotifying.html#DigitalFlare_DisposeNotifying_AfterDisposed">DisposeNotifying.AfterDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.DisposeNotifying.html#DigitalFlare_DisposeNotifying_BeforeDispose">DisposeNotifying.BeforeDispose</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.DisposeNotifying.html#DigitalFlare_DisposeNotifying_FireAfterDisposed_System_Boolean_">DisposeNotifying.FireAfterDisposed(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_IsDisposeRequested">Disposable.IsDisposeRequested</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_Disposing">Disposable.Disposing</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_IsDisposed">Disposable.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_SetDisposeRequested">Disposable.SetDisposeRequested()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_EnsureNotDisposeState">Disposable.EnsureNotDisposeState()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_DigitalFlare_IOxyDisposable_EnsureNotDisposeState">Disposable.IOxyDisposable.EnsureNotDisposeState()</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_EnsureNotDisposeState_System_Boolean_">Disposable.EnsureNotDisposeState(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_ReadDA__1___0__">Disposable.ReadDA&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_ReadDA__1___0__System_Boolean_">Disposable.ReadDA&lt;T&gt;(T, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryReadDA__1___0__System_Boolean___0__">Disposable.TryReadDA&lt;T&gt;(T, Boolean, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryReadDA__1___0____0__">Disposable.TryReadDA&lt;T&gt;(T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryReadDA__1___0__System_Boolean_">Disposable.TryReadDA&lt;T&gt;(T, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryReadDA__1___0__">Disposable.TryReadDA&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryReadDA__1_DigitalFlare_IVh___0_____0__">Disposable.TryReadDA&lt;T&gt;(IVh&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_WriteDA__1___0____0___0_">Disposable.WriteDA&lt;T&gt;(T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_WriteDA__1___0____0___0_System_Boolean__">Disposable.WriteDA&lt;T&gt;(T, T, T, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_WriteDA__1___0____0_">Disposable.WriteDA&lt;T&gt;(T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryWriteDA__1___0____0_">Disposable.TryWriteDA&lt;T&gt;(T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryWriteDA__1___0____0___0__">Disposable.TryWriteDA&lt;T&gt;(T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryWriteDA__1___0____0___0___0__">Disposable.TryWriteDA&lt;T&gt;(T, T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_TryWriteDA__1___0____0___0_">Disposable.TryWriteDA&lt;T&gt;(T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1___0__System_Func___0__System_Action___0__">Disposable.InitDA&lt;T&gt;(T, Func&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1___0__DigitalFlare_OutParamFunc___0__System_Action___0__">Disposable.InitDA&lt;T&gt;(T, OutParamFunc&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1_DigitalFlare_IVh___0___DigitalFlare_OutParamFunc_DigitalFlare_IVh___0___">Disposable.InitDA&lt;T&gt;(IVh&lt;T&gt;, OutParamFunc&lt;IVh&lt;T&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1_DigitalFlare_IVh___0___System_Func_DigitalFlare_IVh___0___">Disposable.InitDA&lt;T&gt;(IVh&lt;T&gt;, Func&lt;IVh&lt;T&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1_DigitalFlare_Vh___0___DigitalFlare_OutParamFunc_DigitalFlare_Vh___0___">Disposable.InitDA&lt;T&gt;(Vh&lt;T&gt;, OutParamFunc&lt;Vh&lt;T&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1_DigitalFlare_Vh___0___System_Func_DigitalFlare_Vh___0___">Disposable.InitDA&lt;T&gt;(Vh&lt;T&gt;, Func&lt;Vh&lt;T&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1_DigitalFlare_VhClass___0___DigitalFlare_OutParamFunc___0__System_Action___0__">Disposable.InitDA&lt;T&gt;(VhClass&lt;T&gt;, OutParamFunc&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDA__1_DigitalFlare_VhClass___0___System_Func___0__System_Action___0__">Disposable.InitDA&lt;T&gt;(VhClass&lt;T&gt;, Func&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDANullable__1_DigitalFlare_VhClass___0___DigitalFlare_OutParamFunc___0__System_Action___0__">Disposable.InitDANullable&lt;T&gt;(VhClass&lt;T&gt;, OutParamFunc&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_InitDANullable__1_DigitalFlare_VhClass___0___System_Func___0__System_Action___0__">Disposable.InitDANullable&lt;T&gt;(VhClass&lt;T&gt;, Func&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDABool__1___0__DigitalFlare_Transform___0__System_Action___0__">Disposable.UpdDABool&lt;T&gt;(T, Transform&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDABool__1___0__DigitalFlare_Transform___0____0__System_Action___0__">Disposable.UpdDABool&lt;T&gt;(T, Transform&lt;T&gt;, T, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDA__1___0__DigitalFlare_Transform___0__DigitalFlare_Threading_InterlockedUpdateResult___0___System_Action___0__">Disposable.UpdDA&lt;T&gt;(T, Transform&lt;T&gt;, InterlockedUpdateResult&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDA__1___0__DigitalFlare_Transform___0__System_Action___0__">Disposable.UpdDA&lt;T&gt;(T, Transform&lt;T&gt;, Action&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDABool__1___0__DigitalFlare_Transform2___0__">Disposable.UpdDABool&lt;T&gt;(T, Transform2&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDABool__1___0__DigitalFlare_Transform2___0____0__">Disposable.UpdDABool&lt;T&gt;(T, Transform2&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDA__1___0__DigitalFlare_Transform2___0__DigitalFlare_Threading_InterlockedUpdateResult___0___">Disposable.UpdDA&lt;T&gt;(T, Transform2&lt;T&gt;, InterlockedUpdateResult&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDA__1___0__DigitalFlare_Transform2___0__">Disposable.UpdDA&lt;T&gt;(T, Transform2&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDABool__1___0____0___0_">Disposable.UpdDABool&lt;T&gt;(T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDABool__1___0____0___0___0__">Disposable.UpdDABool&lt;T&gt;(T, T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDAIfNullBool__1___0____0_">Disposable.UpdDAIfNullBool&lt;T&gt;(T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDAIfNullBool__1___0____0___0__">Disposable.UpdDAIfNullBool&lt;T&gt;(T, T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDAIfNullBool__1___0__System_Func___0____0__">Disposable.UpdDAIfNullBool&lt;T&gt;(T, Func&lt;T&gt;, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDAIfNull__1___0____0_">Disposable.UpdDAIfNull&lt;T&gt;(T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDAIfNull__1___0__System_Func___0__">Disposable.UpdDAIfNull&lt;T&gt;(T, Func&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_UpdDA__2___0____1__DigitalFlare_TransformStateful___0___1__DigitalFlare_TransformCleanupStateful___0___1__">Disposable.UpdDA&lt;T, TState&gt;(T, TState, TransformStateful&lt;T, TState&gt;, TransformCleanupStateful&lt;T, TState&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_AddEventHandler__1_System_EventHandler___0___System_EventHandler___0__">Disposable.AddEventHandler&lt;TEventArgs&gt;(EventHandler&lt;TEventArgs&gt;, EventHandler&lt;TEventArgs&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_AddEventHandler_System_EventHandler__System_EventHandler_">Disposable.AddEventHandler(EventHandler, EventHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_RemoveEventHandler__1_System_EventHandler___0___System_EventHandler___0__">Disposable.RemoveEventHandler&lt;TEventArgs&gt;(EventHandler&lt;TEventArgs&gt;, EventHandler&lt;TEventArgs&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_RemoveEventHandler_System_EventHandler__System_EventHandler_">Disposable.RemoveEventHandler(EventHandler, EventHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_EnumerateDA__1___0____">Disposable.EnumerateDA&lt;T&gt;(T[])</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_EnumerateDA__1___0____System_Boolean_">Disposable.EnumerateDA&lt;T&gt;(T[], Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_EnumerateDA__1_System_Collections_Generic_IEnumerable___0__">Disposable.EnumerateDA&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_EnumerateDA__1_System_Collections_Generic_IEnumerable___0__System_Boolean_">Disposable.EnumerateDA&lt;T&gt;(IEnumerable&lt;T&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_OnDeserializing_System_Runtime_Serialization_StreamingContext_">Disposable.OnDeserializing(StreamingContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="DigitalFlare.Disposable.html#DigitalFlare_Disposable_Dispose">Disposable.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DigitalFlare.html">DigitalFlare</a></h6>
+  <h6><strong>Assembly</strong>: digital-flare.oxy.xapp.dll</h6>
+  <h5 id="DigitalFlare_XAppBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class XAppBase : XInstanceBase&lt;IXAppDescription&gt;, IXApp&lt;IXAppDescription&gt;, IXAppScopeInstance&lt;IXAppDescription&gt;, IXAppScopeInstance, IXInstance&lt;IXAppDescription&gt;, IXInstance, IDisposeNotifying, IOxyDisposable, IDisposableDependencySupport, IDependencySupport, IDisposable, IInitializable, ITextViewSupport</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase__ctor_DigitalFlare_IXAppCtorArgs_DigitalFlare_Description_IXAppDescription__.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.%23ctor(DigitalFlare.IXAppCtorArgs%7BDigitalFlare.Description.IXAppDescription%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L102">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase__ctor_" data-uid="DigitalFlare.XAppBase.#ctor*"></a>
+  <h4 id="DigitalFlare_XAppBase__ctor_DigitalFlare_IXAppCtorArgs_DigitalFlare_Description_IXAppDescription__" data-uid="DigitalFlare.XAppBase.#ctor(DigitalFlare.IXAppCtorArgs{DigitalFlare.Description.IXAppDescription})">XAppBase(IXAppCtorArgs&lt;IXAppDescription&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected XAppBase(IXAppCtorArgs&lt;IXAppDescription&gt; args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.IXAppCtorArgs-1.html">IXAppCtorArgs</a>&lt;<a class="xref" href="DigitalFlare.Description.IXAppDescription.html">IXAppDescription</a>&gt;</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_DefaultOfMaxLengthOfAppInstanceId.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.DefaultOfMaxLengthOfAppInstanceId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L68">View Source</a>
+  </span>
+  <h4 id="DigitalFlare_XAppBase_DefaultOfMaxLengthOfAppInstanceId" data-uid="DigitalFlare.XAppBase.DefaultOfMaxLengthOfAppInstanceId">DefaultOfMaxLengthOfAppInstanceId</h4>
+  <div class="markdown level1 summary">
+Value: &apos;255&apos;.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly int DefaultOfMaxLengthOfAppInstanceId</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_AppInitializationList.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.AppInitializationList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L148">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_AppInitializationList_" data-uid="DigitalFlare.XAppBase.AppInitializationList*"></a>
+  <h4 id="DigitalFlare_XAppBase_AppInitializationList" data-uid="DigitalFlare.XAppBase.AppInitializationList">AppInitializationList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IXAppInitializationList&lt;IXAppInitializationListDescription&gt; AppInitializationList { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.IXAppInitializationList-1.html">IXAppInitializationList</a>&lt;<a class="xref" href="DigitalFlare.Description.IXAppInitializationListDescription.html">IXAppInitializationListDescription</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_AppInstanceId.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.AppInstanceId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L139">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_AppInstanceId_" data-uid="DigitalFlare.XAppBase.AppInstanceId*"></a>
+  <h4 id="DigitalFlare_XAppBase_AppInstanceId" data-uid="DigitalFlare.XAppBase.AppInstanceId">AppInstanceId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AppInstanceId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_AppMessageFlow.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.AppMessageFlow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L145">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_AppMessageFlow_" data-uid="DigitalFlare.XAppBase.AppMessageFlow*"></a>
+  <h4 id="DigitalFlare_XAppBase_AppMessageFlow" data-uid="DigitalFlare.XAppBase.AppMessageFlow">AppMessageFlow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IXAppLocalPublisher&lt;IXAppLocalPublisherDescription&gt; AppMessageFlow { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.MessageFlow.Local.IXAppLocalPublisher-1.html">IXAppLocalPublisher</a>&lt;<a class="xref" href="DigitalFlare.MessageFlow.Local.Description.IXAppLocalPublisherDescription.html">IXAppLocalPublisherDescription</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_AppShutdownToken.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.AppShutdownToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L160">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_AppShutdownToken_" data-uid="DigitalFlare.XAppBase.AppShutdownToken*"></a>
+  <h4 id="DigitalFlare_XAppBase_AppShutdownToken" data-uid="DigitalFlare.XAppBase.AppShutdownToken">AppShutdownToken</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CancellationToken AppShutdownToken { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_AppStartActivationList.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.AppStartActivationList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L151">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_AppStartActivationList_" data-uid="DigitalFlare.XAppBase.AppStartActivationList*"></a>
+  <h4 id="DigitalFlare_XAppBase_AppStartActivationList" data-uid="DigitalFlare.XAppBase.AppStartActivationList">AppStartActivationList</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IActivationList&lt;IActivationListDescription&gt; AppStartActivationList { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.IActivationList-1.html">IActivationList</a>&lt;<a class="xref" href="DigitalFlare.Description.IActivationListDescription.html">IActivationListDescription</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_ContainerControl.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.ContainerControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L130">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_ContainerControl_" data-uid="DigitalFlare.XAppBase.ContainerControl*"></a>
+  <h4 id="DigitalFlare_XAppBase_ContainerControl" data-uid="DigitalFlare.XAppBase.ContainerControl">ContainerControl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IXAppContainerControl ContainerControl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.IXAppContainerControl.html">IXAppContainerControl</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_HasAppShutdownFinished.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.HasAppShutdownFinished%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L190">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_HasAppShutdownFinished_" data-uid="DigitalFlare.XAppBase.HasAppShutdownFinished*"></a>
+  <h4 id="DigitalFlare_XAppBase_HasAppShutdownFinished" data-uid="DigitalFlare.XAppBase.HasAppShutdownFinished">HasAppShutdownFinished</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAppShutdownFinished { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_HasAppShutdownRequested.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.HasAppShutdownRequested%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L184">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_HasAppShutdownRequested_" data-uid="DigitalFlare.XAppBase.HasAppShutdownRequested*"></a>
+  <h4 id="DigitalFlare_XAppBase_HasAppShutdownRequested" data-uid="DigitalFlare.XAppBase.HasAppShutdownRequested">HasAppShutdownRequested</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAppShutdownRequested { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_HasContainerControl.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.HasContainerControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L125">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_HasContainerControl_" data-uid="DigitalFlare.XAppBase.HasContainerControl*"></a>
+  <h4 id="DigitalFlare_XAppBase_HasContainerControl" data-uid="DigitalFlare.XAppBase.HasContainerControl">HasContainerControl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasContainerControl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_RunControl.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.RunControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L142">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_RunControl_" data-uid="DigitalFlare.XAppBase.RunControl*"></a>
+  <h4 id="DigitalFlare_XAppBase_RunControl" data-uid="DigitalFlare.XAppBase.RunControl">RunControl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRunControl&lt;IXApp&lt;IXAppDescription&gt;&gt; RunControl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.ComponentModel.IRunControl-1.html">IRunControl</a>&lt;<a class="xref" href="DigitalFlare.IXApp-1.html">IXApp</a>&lt;<a class="xref" href="DigitalFlare.Description.IXAppDescription.html">IXAppDescription</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_UnhandledExceptionObserver.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.UnhandledExceptionObserver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L122">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_UnhandledExceptionObserver_" data-uid="DigitalFlare.XAppBase.UnhandledExceptionObserver*"></a>
+  <h4 id="DigitalFlare_XAppBase_UnhandledExceptionObserver" data-uid="DigitalFlare.XAppBase.UnhandledExceptionObserver">UnhandledExceptionObserver</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUnhandledExceptionObserver UnhandledExceptionObserver { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Diagnostics.IUnhandledExceptionObserver.html">IUnhandledExceptionObserver</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_BeforeShutdownAsync.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.BeforeShutdownAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L494">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_BeforeShutdownAsync_" data-uid="DigitalFlare.XAppBase.BeforeShutdownAsync*"></a>
+  <h4 id="DigitalFlare_XAppBase_BeforeShutdownAsync" data-uid="DigitalFlare.XAppBase.BeforeShutdownAsync">BeforeShutdownAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task BeforeShutdownAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_CreateAppInstanceId_DigitalFlare_Description_IXAppDescription_System_Int32_.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.CreateAppInstanceId(DigitalFlare.Description.IXAppDescription%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L198">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_CreateAppInstanceId_" data-uid="DigitalFlare.XAppBase.CreateAppInstanceId*"></a>
+  <h4 id="DigitalFlare_XAppBase_CreateAppInstanceId_DigitalFlare_Description_IXAppDescription_System_Int32_" data-uid="DigitalFlare.XAppBase.CreateAppInstanceId(DigitalFlare.Description.IXAppDescription,System.Int32)">CreateAppInstanceId(IXAppDescription, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string CreateAppInstanceId(IXAppDescription description, int maxAllowedLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Description.IXAppDescription.html">IXAppDescription</a></td>
+        <td><span class="parametername">description</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">maxAllowedLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L553">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_Dispose_" data-uid="DigitalFlare.XAppBase.Dispose*"></a>
+  <h4 id="DigitalFlare_XAppBase_Dispose_System_Boolean_" data-uid="DigitalFlare.XAppBase.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool explicitDispose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">explicitDispose</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">DigitalFlare.XInstanceBase&lt;DigitalFlare.Description.IXAppDescription&gt;.Dispose(System.Boolean)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_DoBeforeStartAsync_DigitalFlare_ComponentModel_IRunControlAttemptState_.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.DoBeforeStartAsync(DigitalFlare.ComponentModel.IRunControlAttemptState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L315">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_DoBeforeStartAsync_" data-uid="DigitalFlare.XAppBase.DoBeforeStartAsync*"></a>
+  <h4 id="DigitalFlare_XAppBase_DoBeforeStartAsync_DigitalFlare_ComponentModel_IRunControlAttemptState_" data-uid="DigitalFlare.XAppBase.DoBeforeStartAsync(DigitalFlare.ComponentModel.IRunControlAttemptState)">DoBeforeStartAsync(IRunControlAttemptState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task DoBeforeStartAsync(IRunControlAttemptState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.ComponentModel.IRunControlAttemptState.html">IRunControlAttemptState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_DoStartAsync_DigitalFlare_ComponentModel_IRunControlAttemptState_.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.DoStartAsync(DigitalFlare.ComponentModel.IRunControlAttemptState)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L385">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_DoStartAsync_" data-uid="DigitalFlare.XAppBase.DoStartAsync*"></a>
+  <h4 id="DigitalFlare_XAppBase_DoStartAsync_DigitalFlare_ComponentModel_IRunControlAttemptState_" data-uid="DigitalFlare.XAppBase.DoStartAsync(DigitalFlare.ComponentModel.IRunControlAttemptState)">DoStartAsync(IRunControlAttemptState)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task DoStartAsync(IRunControlAttemptState state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.ComponentModel.IRunControlAttemptState.html">IRunControlAttemptState</a></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_DoStopAsync.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.DoStopAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L391">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_DoStopAsync_" data-uid="DigitalFlare.XAppBase.DoStopAsync*"></a>
+  <h4 id="DigitalFlare_XAppBase_DoStopAsync" data-uid="DigitalFlare.XAppBase.DoStopAsync">DoStopAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task DoStopAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_EnsureShutdownNotRequested.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.EnsureShutdownNotRequested%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L499">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_EnsureShutdownNotRequested_" data-uid="DigitalFlare.XAppBase.EnsureShutdownNotRequested*"></a>
+  <h4 id="DigitalFlare_XAppBase_EnsureShutdownNotRequested" data-uid="DigitalFlare.XAppBase.EnsureShutdownNotRequested">EnsureShutdownNotRequested()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureShutdownNotRequested()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_FireBeforeDispose_System_Boolean_.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.FireBeforeDispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L544">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_FireBeforeDispose_" data-uid="DigitalFlare.XAppBase.FireBeforeDispose*"></a>
+  <h4 id="DigitalFlare_XAppBase_FireBeforeDispose_System_Boolean_" data-uid="DigitalFlare.XAppBase.FireBeforeDispose(System.Boolean)">FireBeforeDispose(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void FireBeforeDispose(bool explicitDispose)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">explicitDispose</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DigitalFlare.DisposeNotifying.html#DigitalFlare_DisposeNotifying_FireBeforeDispose_System_Boolean_">DisposeNotifying.FireBeforeDispose(Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_LocalDependencies.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.LocalDependencies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L505">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_LocalDependencies_" data-uid="DigitalFlare.XAppBase.LocalDependencies*"></a>
+  <h4 id="DigitalFlare_XAppBase_LocalDependencies" data-uid="DigitalFlare.XAppBase.LocalDependencies">LocalDependencies()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;IVh&lt;IDependencyHandler2&gt;&gt; LocalDependencies()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DigitalFlare.IVh-1.html">IVh</a>&lt;<a class="xref" href="DigitalFlare.ComponentModel.Dependencies.IDependencyHandler2.html">IDependencyHandler2</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DigitalFlare.ComponentModel.Dependencies.DependencySupport.html#DigitalFlare_ComponentModel_Dependencies_DependencySupport_LocalDependencies">DependencySupport.LocalDependencies()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_OnInitializeAppAsync_DigitalFlare_Context_IContext_.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.OnInitializeAppAsync(DigitalFlare.Context.IContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L291">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_OnInitializeAppAsync_" data-uid="DigitalFlare.XAppBase.OnInitializeAppAsync*"></a>
+  <h4 id="DigitalFlare_XAppBase_OnInitializeAppAsync_DigitalFlare_Context_IContext_" data-uid="DigitalFlare.XAppBase.OnInitializeAppAsync(DigitalFlare.Context.IContext)">OnInitializeAppAsync(IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task OnInitializeAppAsync(IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Context.IContext.html">IContext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_OnInitializeAsync_DigitalFlare_Context_IContext_.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.OnInitializeAsync(DigitalFlare.Context.IContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L225">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_OnInitializeAsync_" data-uid="DigitalFlare.XAppBase.OnInitializeAsync*"></a>
+  <h4 id="DigitalFlare_XAppBase_OnInitializeAsync_DigitalFlare_Context_IContext_" data-uid="DigitalFlare.XAppBase.OnInitializeAsync(DigitalFlare.Context.IContext)">OnInitializeAsync(IContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override sealed Task OnInitializeAsync(IContext ctx = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Context.IContext.html">IContext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_OnInitializeAsync_DigitalFlare_Context_IContext_">XInstanceBase.OnInitializeAsync(IContext)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_ShutdownAppAsync.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.ShutdownAppAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L396">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_ShutdownAppAsync_" data-uid="DigitalFlare.XAppBase.ShutdownAppAsync*"></a>
+  <h4 id="DigitalFlare_XAppBase_ShutdownAppAsync" data-uid="DigitalFlare.XAppBase.ShutdownAppAsync">ShutdownAppAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ShutdownAppAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_ToString.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L541">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_ToString_" data-uid="DigitalFlare.XAppBase.ToString*"></a>
+  <h4 id="DigitalFlare_XAppBase_ToString" data-uid="DigitalFlare.XAppBase.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="DigitalFlare.XInstanceBase.html#DigitalFlare_XInstanceBase_ToString">XInstanceBase.ToString()</a></div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_AppShutdownFinished.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.AppShutdownFinished%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L193">View Source</a>
+  </span>
+  <h4 id="DigitalFlare_XAppBase_AppShutdownFinished" data-uid="DigitalFlare.XAppBase.AppShutdownFinished">AppShutdownFinished</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler AppShutdownFinished</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_DigitalFlare_IXAppScopeInstance_App.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.DigitalFlare%23IXAppScopeInstance%23App%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L154">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_DigitalFlare_IXAppScopeInstance_App_" data-uid="DigitalFlare.XAppBase.DigitalFlare#IXAppScopeInstance#App*"></a>
+  <h4 id="DigitalFlare_XAppBase_DigitalFlare_IXAppScopeInstance_App" data-uid="DigitalFlare.XAppBase.DigitalFlare#IXAppScopeInstance#App">IXAppScopeInstance.App</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXApp&lt;IXAppDescription&gt; IXAppScopeInstance.App { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.IXApp-1.html">IXApp</a>&lt;<a class="xref" href="DigitalFlare.Description.IXAppDescription.html">IXAppDescription</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_DigitalFlare_IXAppScopeInstance_AppDisposeTolerant.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.DigitalFlare%23IXAppScopeInstance%23AppDisposeTolerant%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L157">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_DigitalFlare_IXAppScopeInstance_AppDisposeTolerant_" data-uid="DigitalFlare.XAppBase.DigitalFlare#IXAppScopeInstance#AppDisposeTolerant*"></a>
+  <h4 id="DigitalFlare_XAppBase_DigitalFlare_IXAppScopeInstance_AppDisposeTolerant" data-uid="DigitalFlare.XAppBase.DigitalFlare#IXAppScopeInstance#AppDisposeTolerant">IXAppScopeInstance.AppDisposeTolerant</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IXApp&lt;IXAppDescription&gt; IXAppScopeInstance.AppDisposeTolerant { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.IXApp-1.html">IXApp</a>&lt;<a class="xref" href="DigitalFlare.Description.IXAppDescription.html">IXAppDescription</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_DigitalFlare_IXAppScopeInstance_HasShutdownRequested.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.DigitalFlare%23IXAppScopeInstance%23HasShutdownRequested%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L187">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_DigitalFlare_IXAppScopeInstance_HasShutdownRequested_" data-uid="DigitalFlare.XAppBase.DigitalFlare#IXAppScopeInstance#HasShutdownRequested*"></a>
+  <h4 id="DigitalFlare_XAppBase_DigitalFlare_IXAppScopeInstance_HasShutdownRequested" data-uid="DigitalFlare.XAppBase.DigitalFlare#IXAppScopeInstance#HasShutdownRequested">IXAppScopeInstance.HasShutdownRequested</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IXAppScopeInstance.HasShutdownRequested { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase_DigitalFlare_IXAppScopeInstance_ShutdownToken.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase.DigitalFlare%23IXAppScopeInstance%23ShutdownToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L181">View Source</a>
+  </span>
+  <a id="DigitalFlare_XAppBase_DigitalFlare_IXAppScopeInstance_ShutdownToken_" data-uid="DigitalFlare.XAppBase.DigitalFlare#IXAppScopeInstance#ShutdownToken*"></a>
+  <h4 id="DigitalFlare_XAppBase_DigitalFlare_IXAppScopeInstance_ShutdownToken" data-uid="DigitalFlare.XAppBase.DigitalFlare#IXAppScopeInstance#ShutdownToken">IXAppScopeInstance.ShutdownToken</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CancellationToken IXAppScopeInstance.ShutdownToken { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="DigitalFlare.IXApp-1.html">IXApp&lt;TDescription&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.IXAppScopeInstance-1.html">IXAppScopeInstance&lt;TDescription&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.IXAppScopeInstance.html">IXAppScopeInstance</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.IXInstance-1.html">IXInstance&lt;TDescription&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.IXInstance.html">IXInstance</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.IDisposeNotifying.html">IDisposeNotifying</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.IOxyDisposable.html">IOxyDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ComponentModel.Dependencies.IDisposableDependencySupport.html">IDisposableDependencySupport</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ComponentModel.Dependencies.IDependencySupport.html">IDependencySupport</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ComponentModel.IInitializable.html">IInitializable</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ITextViewSupport.html">ITextViewSupport</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="DigitalFlare.XAppShutdownUtilities.html#DigitalFlare_XAppShutdownUtilities_ShutdownApp_DigitalFlare_IXApp_DigitalFlare_Description_IXAppDescription__">XAppShutdownUtilities.ShutdownApp(IXApp&lt;IXAppDescription&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.XAppShutdownUtilities.html#DigitalFlare_XAppShutdownUtilities_ShutdownApp_DigitalFlare_IXApp_DigitalFlare_Description_IXAppDescription__System_Exception_">XAppShutdownUtilities.ShutdownApp(IXApp&lt;IXAppDescription&gt;, Exception)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.XAppShutdownUtilities.html#DigitalFlare_XAppShutdownUtilities_ShutdownAppAsync_DigitalFlare_IXApp_DigitalFlare_Description_IXAppDescription__System_Exception_">XAppShutdownUtilities.ShutdownAppAsync(IXApp&lt;IXAppDescription&gt;, Exception)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_Boolean_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_Boolean_System_Boolean_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, Boolean, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_Collections_Generic_IEnumerable_System_IDisposable__">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, IEnumerable&lt;IDisposable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_IDisposable_System_IDisposable_System_IDisposable_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, IDisposable, IDisposable, IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_IDisposable_System_IDisposable_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, IDisposable, IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_IDisposable_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Runtime.Serialization.Json.JsonSerializationUtilities.html#DigitalFlare_Runtime_Serialization_Json_JsonSerializationUtilities_SerializeToJson__1___0_System_Boolean_">JsonSerializationUtilities.SerializeToJson&lt;T&gt;(T, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Runtime.Serialization.Json.JsonSerializationUtilities.html#DigitalFlare_Runtime_Serialization_Json_JsonSerializationUtilities_SerializeToJson__1___0_Newtonsoft_Json_JsonSerializer_System_Boolean_">JsonSerializationUtilities.SerializeToJson&lt;T&gt;(T, JsonSerializer, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Runtime.Serialization.Json.JsonSerializationUtilities.html#DigitalFlare_Runtime_Serialization_Json_JsonSerializationUtilities_SerializeToJsonAsync__1___0_">JsonSerializationUtilities.SerializeToJsonAsync&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Runtime.Serialization.Json.JsonSerializationUtilities.html#DigitalFlare_Runtime_Serialization_Json_JsonSerializationUtilities_SerializeToJson__1___0_">JsonSerializationUtilities.SerializeToJson&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_Arg__1___0_System_String_">ArgumentUtilities.Arg&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_Arg__1___0_System_String_DigitalFlare_ExceptionFactoryDelegate2_">ArgumentUtilities.Arg&lt;T&gt;(T, String, ExceptionFactoryDelegate2)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_ArgProp__1___0_System_String_">ArgumentUtilities.ArgProp&lt;TArg&gt;(TArg, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_ArgProp__1___0_System_String_DigitalFlare_ExceptionFactoryDelegate2_">ArgumentUtilities.ArgProp&lt;T&gt;(T, String, ExceptionFactoryDelegate2)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_PropArg__1___0_System_String_DigitalFlare_ExceptionFactoryDelegate2_">ArgumentUtilities.PropArg&lt;T&gt;(T, String, ExceptionFactoryDelegate2)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_PropArg__1___0_System_String_">ArgumentUtilities.PropArg&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_EnsureNotNull__1___0_System_String_">ArgumentUtilities.EnsureNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilities.html#DigitalFlare_Linq_EnumerableUtilities_EmptySequence__1___0_">EnumerableUtilities.EmptySequence&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilities.html#DigitalFlare_Linq_EnumerableUtilities_Sequence__1___0_System_Func___0_System_Boolean__System_Func___0___0__">EnumerableUtilities.Sequence&lt;T&gt;(T, Func&lt;T, Boolean&gt;, Func&lt;T, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilities.html#DigitalFlare_Linq_EnumerableUtilities_Sequence__1___0_System_Int32_">EnumerableUtilities.Sequence&lt;T&gt;(T, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilities.html#DigitalFlare_Linq_EnumerableUtilities_Sequence__1___0_">EnumerableUtilities.Sequence&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentPlaceholderUtilities.html#DigitalFlare_ArgumentPlaceholderUtilities_ArgPlaceholder__1___0_">ArgumentPlaceholderUtilities.ArgPlaceholder&lt;TValue&gt;(TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.StringUtilities.html#DigitalFlare_StringUtilities_ToFormattableString_System_Object_System_Boolean_">StringUtilities.ToFormattableString(Object, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.StringUtilities.html#DigitalFlare_StringUtilities_ToFormattableString_System_Object_">StringUtilities.ToFormattableString(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.StringUtilities.html#DigitalFlare_StringUtilities_ToFormattableString__1___0_System_Boolean_">StringUtilities.ToFormattableString&lt;T&gt;(T, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.StringUtilities.html#DigitalFlare_StringUtilities_ToFormattableString__1___0_">StringUtilities.ToFormattableString&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilitiesCoreL1.html#DigitalFlare_ArgumentUtilitiesCoreL1_Cast__2___0_">ArgumentUtilitiesCoreL1.Cast&lt;TFrom, TTo&gt;(TFrom)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.FormatStringUtilities.html#DigitalFlare_FormatStringUtilities_FmtStr__1___0_">FormatStringUtilities.FmtStr&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilitiesCoreL1.html#DigitalFlare_Linq_EnumerableUtilitiesCoreL1_TreeNode__1___0_">EnumerableUtilitiesCoreL1.TreeNode&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.XInstanceFactoryUtilities.html#DigitalFlare_XInstanceFactoryUtilities_AppScopeInstanceOf__1_DigitalFlare_IXAppScopeInstance_DigitalFlare_Description_IDescription_System_Type_System_Boolean_">XInstanceFactoryUtilities.AppScopeInstanceOf&lt;TInstance&gt;(IXAppScopeInstance, IDescription, Type, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.XInstanceFactoryUtilities.html#DigitalFlare_XInstanceFactoryUtilities_CreateAppScopeInstance__1_DigitalFlare_IXAppScopeInstance_DigitalFlare_Description_IDescription_System_Type_System_Boolean_">XInstanceFactoryUtilities.CreateAppScopeInstance&lt;TInstance&gt;(IXAppScopeInstance, IDescription, Type, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.XInstanceFactoryUtilities.html#DigitalFlare_XInstanceFactoryUtilities_CreateAppScopeInstance__1_DigitalFlare_IXAppScopeInstance_DigitalFlare_ArgumentUtilitiesHandle_System_String__System_Type_System_Boolean_">XInstanceFactoryUtilities.CreateAppScopeInstance&lt;TInstance&gt;(IXAppScopeInstance, ArgumentUtilitiesHandle&lt;String&gt;, Type, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.XInstanceFactoryUtilities.html#DigitalFlare_XInstanceFactoryUtilities_CreateAppScopeInstance__1_DigitalFlare_IXAppScopeInstance_System_String_System_Type_System_Boolean_">XInstanceFactoryUtilities.CreateAppScopeInstance&lt;TInstance&gt;(IXAppScopeInstance, String, Type, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.XInstanceFactoryUtilities.html#DigitalFlare_XInstanceFactoryUtilities_CreateInitializeAppScopeInstanceAsync__1_DigitalFlare_IXAppScopeInstance_DigitalFlare_Description_IDescription_DigitalFlare_Context_IContext_System_Boolean_">XInstanceFactoryUtilities.CreateInitializeAppScopeInstanceAsync&lt;TInstance&gt;(IXAppScopeInstance, IDescription, IContext, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.XInstanceFactoryUtilities.html#DigitalFlare_XInstanceFactoryUtilities_CreateInitializeAppScopeInstanceAsync__1_DigitalFlare_IXAppScopeInstance_DigitalFlare_ArgumentUtilitiesHandle_System_Collections_Generic_IEnumerable_DigitalFlare_Description_IDescription___DigitalFlare_Context_IContext_System_Boolean_">XInstanceFactoryUtilities.CreateInitializeAppScopeInstanceAsync&lt;TInstance&gt;(IXAppScopeInstance, ArgumentUtilitiesHandle&lt;IEnumerable&lt;IDescription&gt;&gt;, IContext, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.XInstanceFactoryUtilities.html#DigitalFlare_XInstanceFactoryUtilities_CreateInitializeAppScopeInstanceAsync__1_DigitalFlare_IXAppScopeInstance_System_Collections_Generic_IEnumerable_DigitalFlare_Description_IDescription__DigitalFlare_Context_IContext_System_Boolean_">XInstanceFactoryUtilities.CreateInitializeAppScopeInstanceAsync&lt;TInstance&gt;(IXAppScopeInstance, IEnumerable&lt;IDescription&gt;, IContext, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Description.DescriptionUtilities.html#DigitalFlare_Description_DescriptionUtilities_LogDisabilityWarning_System_Object_DigitalFlare_Description_IDescription_System_String_DigitalFlare_ArgumentPlaceholder_DigitalFlare_Diagnostics_SeverityLevel__">DescriptionUtilities.LogDisabilityWarning(Object, IDescription, String, ArgumentPlaceholder&lt;SeverityLevel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Description.DescriptionUtilities.html#DigitalFlare_Description_DescriptionUtilities_LogAutoActivationDisabilityWarning_System_Object_DigitalFlare_Description_IDescription_System_String_DigitalFlare_ArgumentPlaceholder_DigitalFlare_Diagnostics_SeverityLevel__">DescriptionUtilities.LogAutoActivationDisabilityWarning(Object, IDescription, String, ArgumentPlaceholder&lt;SeverityLevel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.FluentApiUtilities.html#DigitalFlare_FluentApiUtilities_Fluent__1___0_">FluentApiUtilities.Fluent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.FluentApiUtilities.html#DigitalFlare_FluentApiUtilities_Convert__2___0_System_Func___1__System_Func___0___1__">FluentApiUtilities.Convert&lt;TSource, TResult&gt;(TSource, Func&lt;TResult&gt;, Func&lt;TSource, TResult&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterAndExitLockSmallTimeout__1___0_">MonitorUtilities.EnterAndExitLockSmallTimeout&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterLockSmallTimeout__1___0_System_Boolean__">MonitorUtilities.EnterLockSmallTimeout&lt;T&gt;(T, ref Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterAndExitLock__1___0_">MonitorUtilities.EnterAndExitLock&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterLock__1___0_System_Boolean__">MonitorUtilities.EnterLock&lt;T&gt;(T, ref Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterLock__1___0_System_Int32_System_Boolean__">MonitorUtilities.EnterLock&lt;T&gt;(T, Int32, ref Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_TryEnterLock__1___0_System_Boolean__">MonitorUtilities.TryEnterLock&lt;T&gt;(T, ref Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_ExitLock__1___0_">MonitorUtilities.ExitLock&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_XAppBase.md&amp;value=---%0Auid%3A%20DigitalFlare.XAppBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.xapp/{root-namespace}/XAppBase.cs/#L40" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © Vitalik Mironov, 2006-2019. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

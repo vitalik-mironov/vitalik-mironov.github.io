@@ -1,0 +1,1512 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EfCoreDbContext
+   | Oxy API reference </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EfCoreDbContext
+   | Oxy API reference ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext">
+  
+  
+  <h1 id="DigitalFlare_Data_EfCore_EfCoreDbContext" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext" class="text-break">Class EfCoreDbContext
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext">DbContext</a></div>
+    <div class="level2"><span class="xref">EfCoreDbContext</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.infrastructure.iinfrastructure-1">IInfrastructure</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.internal.idbcontextdependencies">IDbContextDependencies</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.internal.idbsetcache">IDbSetCache</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.internal.idbquerycache">IDbQueryCache</a></div>
+    <div><a class="xref" href="DigitalFlare.Data.Querying.IDataQueryingContext.html">IDataQueryingContext</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="DigitalFlare.ComponentModel.Dependencies.IDependencySupport.html">IDependencySupport</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.internal.idbcontextpoolable">IDbContextPoolable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbsetcache-getoraddset#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbSetCache_GetOrAddSet_Microsoft_EntityFrameworkCore_Internal_IDbSetSource_System_Type_">DbContext.IDbSetCache.GetOrAddSet(IDbSetSource, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbquerycache-getoraddquery#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbQueryCache_GetOrAddQuery_Microsoft_EntityFrameworkCore_Internal_IDbQuerySource_System_Type_">DbContext.IDbQueryCache.GetOrAddQuery(IDbQuerySource, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.set#Microsoft_EntityFrameworkCore_DbContext_Set__1">DbContext.Set&lt;TEntity&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.query#Microsoft_EntityFrameworkCore_DbContext_Query__1">DbContext.Query&lt;TQuery&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbcontextpoolable-snapshotconfiguration#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextPoolable_SnapshotConfiguration">DbContext.IDbContextPoolable.SnapshotConfiguration()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbcontextpoolable-resurrect#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextPoolable_Resurrect_Microsoft_EntityFrameworkCore_Internal_DbContextPoolConfigurationSnapshot_">DbContext.IDbContextPoolable.Resurrect(DbContextPoolConfigurationSnapshot)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbcontextpoolable-resetstate#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextPoolable_ResetState">DbContext.IDbContextPoolable.ResetState()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.entry#Microsoft_EntityFrameworkCore_DbContext_Entry__1___0_">DbContext.Entry&lt;TEntity&gt;(TEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.entry#Microsoft_EntityFrameworkCore_DbContext_Entry_System_Object_">DbContext.Entry(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.add#Microsoft_EntityFrameworkCore_DbContext_Add__1___0_">DbContext.Add&lt;TEntity&gt;(TEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.addasync#Microsoft_EntityFrameworkCore_DbContext_AddAsync__1___0_System_Threading_CancellationToken_">DbContext.AddAsync&lt;TEntity&gt;(TEntity, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.attach#Microsoft_EntityFrameworkCore_DbContext_Attach__1___0_">DbContext.Attach&lt;TEntity&gt;(TEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.update#Microsoft_EntityFrameworkCore_DbContext_Update__1___0_">DbContext.Update&lt;TEntity&gt;(TEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.remove#Microsoft_EntityFrameworkCore_DbContext_Remove__1___0_">DbContext.Remove&lt;TEntity&gt;(TEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.add#Microsoft_EntityFrameworkCore_DbContext_Add_System_Object_">DbContext.Add(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.addasync#Microsoft_EntityFrameworkCore_DbContext_AddAsync_System_Object_System_Threading_CancellationToken_">DbContext.AddAsync(Object, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.attach#Microsoft_EntityFrameworkCore_DbContext_Attach_System_Object_">DbContext.Attach(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.update#Microsoft_EntityFrameworkCore_DbContext_Update_System_Object_">DbContext.Update(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.remove#Microsoft_EntityFrameworkCore_DbContext_Remove_System_Object_">DbContext.Remove(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.addrange#Microsoft_EntityFrameworkCore_DbContext_AddRange_System_Object___">DbContext.AddRange(Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.addrangeasync#Microsoft_EntityFrameworkCore_DbContext_AddRangeAsync_System_Object___">DbContext.AddRangeAsync(Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.attachrange#Microsoft_EntityFrameworkCore_DbContext_AttachRange_System_Object___">DbContext.AttachRange(Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.updaterange#Microsoft_EntityFrameworkCore_DbContext_UpdateRange_System_Object___">DbContext.UpdateRange(Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.removerange#Microsoft_EntityFrameworkCore_DbContext_RemoveRange_System_Object___">DbContext.RemoveRange(Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.addrange#Microsoft_EntityFrameworkCore_DbContext_AddRange_System_Collections_Generic_IEnumerable_System_Object__">DbContext.AddRange(IEnumerable&lt;Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.addrangeasync#Microsoft_EntityFrameworkCore_DbContext_AddRangeAsync_System_Collections_Generic_IEnumerable_System_Object__System_Threading_CancellationToken_">DbContext.AddRangeAsync(IEnumerable&lt;Object&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.attachrange#Microsoft_EntityFrameworkCore_DbContext_AttachRange_System_Collections_Generic_IEnumerable_System_Object__">DbContext.AttachRange(IEnumerable&lt;Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.updaterange#Microsoft_EntityFrameworkCore_DbContext_UpdateRange_System_Collections_Generic_IEnumerable_System_Object__">DbContext.UpdateRange(IEnumerable&lt;Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.removerange#Microsoft_EntityFrameworkCore_DbContext_RemoveRange_System_Collections_Generic_IEnumerable_System_Object__">DbContext.RemoveRange(IEnumerable&lt;Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.find#Microsoft_EntityFrameworkCore_DbContext_Find_System_Type_System_Object___">DbContext.Find(Type, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.findasync#Microsoft_EntityFrameworkCore_DbContext_FindAsync_System_Type_System_Object___">DbContext.FindAsync(Type, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.findasync#Microsoft_EntityFrameworkCore_DbContext_FindAsync_System_Type_System_Object___System_Threading_CancellationToken_">DbContext.FindAsync(Type, Object[], CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.find#Microsoft_EntityFrameworkCore_DbContext_Find__1_System_Object___">DbContext.Find&lt;TEntity&gt;(Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.findasync#Microsoft_EntityFrameworkCore_DbContext_FindAsync__1_System_Object___">DbContext.FindAsync&lt;TEntity&gt;(Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.findasync#Microsoft_EntityFrameworkCore_DbContext_FindAsync__1_System_Object___System_Threading_CancellationToken_">DbContext.FindAsync&lt;TEntity&gt;(Object[], CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.database#Microsoft_EntityFrameworkCore_DbContext_Database">DbContext.Database</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.changetracker#Microsoft_EntityFrameworkCore_DbContext_ChangeTracker">DbContext.ChangeTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.model#Microsoft_EntityFrameworkCore_DbContext_Model">DbContext.Model</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbcontextdependencies-setsource#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextDependencies_SetSource">DbContext.IDbContextDependencies.SetSource</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbcontextdependencies-querysource#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextDependencies_QuerySource">DbContext.IDbContextDependencies.QuerySource</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbcontextdependencies-entityfinderfactory#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextDependencies_EntityFinderFactory">DbContext.IDbContextDependencies.EntityFinderFactory</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbcontextdependencies-queryprovider#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextDependencies_QueryProvider">DbContext.IDbContextDependencies.QueryProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbcontextdependencies-statemanager#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextDependencies_StateManager">DbContext.IDbContextDependencies.StateManager</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbcontextdependencies-changedetector#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextDependencies_ChangeDetector">DbContext.IDbContextDependencies.ChangeDetector</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbcontextdependencies-entitygraphattacher#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextDependencies_EntityGraphAttacher">DbContext.IDbContextDependencies.EntityGraphAttacher</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbcontextdependencies-updatelogger#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextDependencies_UpdateLogger">DbContext.IDbContextDependencies.UpdateLogger</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-internal-idbcontextdependencies-infrastructurelogger#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextDependencies_InfrastructureLogger">DbContext.IDbContextDependencies.InfrastructureLogger</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.microsoft-entityframeworkcore-infrastructure-iinfrastructure-system-iserviceprovider--instance#Microsoft_EntityFrameworkCore_DbContext_Microsoft_EntityFrameworkCore_Infrastructure_IInfrastructure_System_IServiceProvider__Instance">DbContext.IInfrastructure&lt;IServiceProvider&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="DigitalFlare.Data.EfCore.html">DigitalFlare.Data.EfCore</a></h6>
+  <h6><strong>Assembly</strong>: digital-flare.oxy.ef-core.dll</h6>
+  <h5 id="DigitalFlare_Data_EfCore_EfCoreDbContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EfCoreDbContext : DbContext, IInfrastructure&lt;IServiceProvider&gt;, IDbContextDependencies, IDbSetCache, IDbQueryCache, IDataQueryingContext, IDisposable, IDependencySupport, IDbContextPoolable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext__ctor_DigitalFlare_Data_EfCore_EfCoreDbContextCtorArgs_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.%23ctor(DigitalFlare.Data.EfCore.EfCoreDbContextCtorArgs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L178">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext__ctor_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.#ctor*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext__ctor_DigitalFlare_Data_EfCore_EfCoreDbContextCtorArgs_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.#ctor(DigitalFlare.Data.EfCore.EfCoreDbContextCtorArgs)">EfCoreDbContext(EfCoreDbContextCtorArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EfCoreDbContext(EfCoreDbContextCtorArgs args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Data.EfCore.EfCoreDbContextCtorArgs.html">EfCoreDbContextCtorArgs</a></td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.%23ctor(Microsoft.EntityFrameworkCore.DbContextOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L184">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext__ctor_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.#ctor*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions)">EfCoreDbContext(DbContextOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EfCoreDbContext(DbContextOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontextoptions">DbContextOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_DataContext.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.DataContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L201">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_DataContext_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DataContext*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_DataContext" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DataContext">DataContext</h4>
+  <div class="markdown level1 summary">
+Gets the data context associated with this EF context.
+<p>Can be <span class="xref">null</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDataContext2 DataContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Data.IDataContext2.html">IDataContext2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_IsReadOnly.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.IsReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L190">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_IsReadOnly_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.IsReadOnly*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_IsReadOnly" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_CreateQuery_System_Type_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.CreateQuery(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L295">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_CreateQuery_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.CreateQuery*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_CreateQuery_System_Type_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.CreateQuery(System.Type)">CreateQuery(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IQueryable CreateQuery(Type elementType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">elementType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.iqueryable">IQueryable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_CreateQuery__1.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.CreateQuery%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L301">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_CreateQuery_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.CreateQuery*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_CreateQuery__1" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.CreateQuery``1">CreateQuery&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IQueryable&lt;T&gt; CreateQuery&lt;T&gt;()
+    where T : class</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_CreateQueryExecutionJob__1_System_Linq_IQueryable___0__.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.CreateQueryExecutionJob%60%601(System.Linq.IQueryable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L308">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_CreateQueryExecutionJob_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.CreateQueryExecutionJob*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_CreateQueryExecutionJob__1_System_Linq_IQueryable___0__" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.CreateQueryExecutionJob``1(System.Linq.IQueryable{``0})">CreateQueryExecutionJob&lt;T&gt;(IQueryable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IQueryExecutionJob&lt;T&gt; CreateQueryExecutionJob&lt;T&gt;(IQueryable&lt;T&gt; query)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;T&gt;</td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Linq.IQueryExecutionJob-1.html">IQueryExecutionJob</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_Dispose.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L331">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_Dispose_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.Dispose*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_Dispose" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.dispose#Microsoft_EntityFrameworkCore_DbContext_Dispose">DbContext.Dispose()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_DoCreateModel_Microsoft_EntityFrameworkCore_ModelBuilder_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.DoCreateModel(Microsoft.EntityFrameworkCore.ModelBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L221">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_DoCreateModel_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DoCreateModel*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_DoCreateModel_Microsoft_EntityFrameworkCore_ModelBuilder_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DoCreateModel(Microsoft.EntityFrameworkCore.ModelBuilder)">DoCreateModel(ModelBuilder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DoCreateModel(ModelBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.modelbuilder">ModelBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_DoSaveChanges_System_Boolean_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.DoSaveChanges(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L289">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_DoSaveChanges_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DoSaveChanges*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_DoSaveChanges_System_Boolean_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DoSaveChanges(System.Boolean)">DoSaveChanges(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int DoSaveChanges(bool acceptAllChangesOnSuccess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">acceptAllChangesOnSuccess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_DoSaveChangesAsync_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.DoSaveChangesAsync(System.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L286">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_DoSaveChangesAsync_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DoSaveChangesAsync*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_DoSaveChangesAsync_System_Boolean_System_Threading_CancellationToken_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DoSaveChangesAsync(System.Boolean,System.Threading.CancellationToken)">DoSaveChangesAsync(Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;int&gt; DoSaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken ct)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">acceptAllChangesOnSuccess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_EnsureNotReadOnly.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.EnsureNotReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L245">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_EnsureNotReadOnly_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.EnsureNotReadOnly*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_EnsureNotReadOnly" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.EnsureNotReadOnly">EnsureNotReadOnly()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EnsureNotReadOnly()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_GetDependencyScope.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.GetDependencyScope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L318">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_GetDependencyScope_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.GetDependencyScope*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_GetDependencyScope" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.GetDependencyScope">GetDependencyScope()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDependencyScope GetDependencyScope()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.ComponentModel.Dependencies.IDependencyScope.html">IDependencyScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_GetEntityTypes.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.GetEntityTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L239">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_GetEntityTypes_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.GetEntityTypes*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_GetEntityTypes" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.GetEntityTypes">GetEntityTypes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;IDataTypeBuilder&gt; GetEntityTypes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DigitalFlare.Data.TypeSystem.IDataTypeBuilder.html">IDataTypeBuilder</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_HasNecessityToSaveChanges.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.HasNecessityToSaveChanges%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L204">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_HasNecessityToSaveChanges_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.HasNecessityToSaveChanges*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_HasNecessityToSaveChanges" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.HasNecessityToSaveChanges">HasNecessityToSaveChanges()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool HasNecessityToSaveChanges()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_LocalDependencies.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.LocalDependencies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L321">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_LocalDependencies_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.LocalDependencies*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_LocalDependencies" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.LocalDependencies">LocalDependencies()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;IVh&lt;IDependencyHandler2&gt;&gt; LocalDependencies()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="DigitalFlare.IVh-1.html">IVh</a>&lt;<a class="xref" href="DigitalFlare.ComponentModel.Dependencies.IDependencyHandler2.html">IDependencyHandler2</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_OnConfiguring_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L213">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_OnConfiguring_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.OnConfiguring*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_OnConfiguring_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">OnConfiguring(DbContextOptionsBuilder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override sealed void OnConfiguring(DbContextOptionsBuilder optionsBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontextoptionsbuilder">DbContextOptionsBuilder</a></td>
+        <td><span class="parametername">optionsBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.onconfiguring#Microsoft_EntityFrameworkCore_DbContext_OnConfiguring_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_">DbContext.OnConfiguring(DbContextOptionsBuilder)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L216">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_OnModelCreating_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.OnModelCreating*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">OnModelCreating(ModelBuilder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override sealed void OnModelCreating(ModelBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.modelbuilder">ModelBuilder</a></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.onmodelcreating#Microsoft_EntityFrameworkCore_DbContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_">DbContext.OnModelCreating(ModelBuilder)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_SaveChanges.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.SaveChanges%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L250">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_SaveChanges_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.SaveChanges*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_SaveChanges" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.SaveChanges">SaveChanges()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed int SaveChanges()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechanges#Microsoft_EntityFrameworkCore_DbContext_SaveChanges">DbContext.SaveChanges()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_SaveChanges_System_Boolean_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.SaveChanges(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L259">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_SaveChanges_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.SaveChanges*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_SaveChanges_System_Boolean_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.SaveChanges(System.Boolean)">SaveChanges(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed int SaveChanges(bool acceptAllChangesOnSuccess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">acceptAllChangesOnSuccess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechanges#Microsoft_EntityFrameworkCore_DbContext_SaveChanges_System_Boolean_">DbContext.SaveChanges(Boolean)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_SaveChangesAsync_System_Boolean_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.SaveChangesAsync(System.Boolean%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L277">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_SaveChangesAsync_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.SaveChangesAsync*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_SaveChangesAsync_System_Boolean_System_Threading_CancellationToken_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.SaveChangesAsync(System.Boolean,System.Threading.CancellationToken)">SaveChangesAsync(Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Task&lt;int&gt; SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken ct = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">acceptAllChangesOnSuccess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechangesasync#Microsoft_EntityFrameworkCore_DbContext_SaveChangesAsync_System_Boolean_System_Threading_CancellationToken_">DbContext.SaveChangesAsync(Boolean, CancellationToken)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_SaveChangesAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.SaveChangesAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L268">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_SaveChangesAsync_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.SaveChangesAsync*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_SaveChangesAsync_System_Threading_CancellationToken_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.SaveChangesAsync(System.Threading.CancellationToken)">SaveChangesAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Task&lt;int&gt; SaveChangesAsync(CancellationToken ct)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">ct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechangesasync#Microsoft_EntityFrameworkCore_DbContext_SaveChangesAsync_System_Threading_CancellationToken_">DbContext.SaveChangesAsync(CancellationToken)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_ToString.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L328">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_ToString_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.ToString*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_ToString" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext.tostring#Microsoft_EntityFrameworkCore_DbContext_ToString">DbContext.ToString()</a></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_DigitalFlare_Data_Querying_IDataQueryingContext_CreateQuery_System_Type_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.DigitalFlare%23Data%23Querying%23IDataQueryingContext%23CreateQuery(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L292">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_DigitalFlare_Data_Querying_IDataQueryingContext_CreateQuery_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DigitalFlare#Data#Querying#IDataQueryingContext#CreateQuery*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_DigitalFlare_Data_Querying_IDataQueryingContext_CreateQuery_System_Type_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DigitalFlare#Data#Querying#IDataQueryingContext#CreateQuery(System.Type)">IDataQueryingContext.CreateQuery(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable IDataQueryingContext.CreateQuery(Type elementType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">elementType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.iqueryable">IQueryable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_DigitalFlare_Data_Querying_IDataQueryingContext_CreateQuery__1.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.DigitalFlare%23Data%23Querying%23IDataQueryingContext%23CreateQuery%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L298">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_DigitalFlare_Data_Querying_IDataQueryingContext_CreateQuery_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DigitalFlare#Data#Querying#IDataQueryingContext#CreateQuery*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_DigitalFlare_Data_Querying_IDataQueryingContext_CreateQuery__1" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DigitalFlare#Data#Querying#IDataQueryingContext#CreateQuery``1">IDataQueryingContext.CreateQuery&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;T&gt; IDataQueryingContext.CreateQuery&lt;T&gt;()
+    where T : class</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_DigitalFlare_Data_Querying_IDataQueryingContext_CreateQueryExecutionJob__1_System_Linq_IQueryable___0__.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.DigitalFlare%23Data%23Querying%23IDataQueryingContext%23CreateQueryExecutionJob%60%601(System.Linq.IQueryable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L305">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_DigitalFlare_Data_Querying_IDataQueryingContext_CreateQueryExecutionJob_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DigitalFlare#Data#Querying#IDataQueryingContext#CreateQueryExecutionJob*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_DigitalFlare_Data_Querying_IDataQueryingContext_CreateQueryExecutionJob__1_System_Linq_IQueryable___0__" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.DigitalFlare#Data#Querying#IDataQueryingContext#CreateQueryExecutionJob``1(System.Linq.IQueryable{``0})">IDataQueryingContext.CreateQueryExecutionJob&lt;T&gt;(IQueryable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryExecutionJob&lt;T&gt; IDataQueryingContext.CreateQueryExecutionJob&lt;T&gt;(IQueryable&lt;T&gt; query)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.linq.iqueryable-1">IQueryable</a>&lt;T&gt;</td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="DigitalFlare.Linq.IQueryExecutionJob-1.html">IQueryExecutionJob</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextPoolable_SetPool_Microsoft_EntityFrameworkCore_Internal_IDbContextPool_.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext.Microsoft%23EntityFrameworkCore%23Internal%23IDbContextPoolable%23SetPool(Microsoft.EntityFrameworkCore.Internal.IDbContextPool)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L325">View Source</a>
+  </span>
+  <a id="DigitalFlare_Data_EfCore_EfCoreDbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextPoolable_SetPool_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.Microsoft#EntityFrameworkCore#Internal#IDbContextPoolable#SetPool*"></a>
+  <h4 id="DigitalFlare_Data_EfCore_EfCoreDbContext_Microsoft_EntityFrameworkCore_Internal_IDbContextPoolable_SetPool_Microsoft_EntityFrameworkCore_Internal_IDbContextPool_" data-uid="DigitalFlare.Data.EfCore.EfCoreDbContext.Microsoft#EntityFrameworkCore#Internal#IDbContextPoolable#SetPool(Microsoft.EntityFrameworkCore.Internal.IDbContextPool)">IDbContextPoolable.SetPool(IDbContextPool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IDbContextPoolable.SetPool(IDbContextPool contextPool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.internal.idbcontextpool">IDbContextPool</a></td>
+        <td><span class="parametername">contextPool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.infrastructure.iinfrastructure-1">Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.internal.idbcontextdependencies">Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.internal.idbsetcache">Microsoft.EntityFrameworkCore.Internal.IDbSetCache</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.internal.idbquerycache">Microsoft.EntityFrameworkCore.Internal.IDbQueryCache</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Data.Querying.IDataQueryingContext.html">IDataQueryingContext</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ComponentModel.Dependencies.IDependencySupport.html">IDependencySupport</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.internal.idbcontextpoolable">Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_Boolean_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_Boolean_System_Boolean_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, Boolean, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_Collections_Generic_IEnumerable_System_IDisposable__">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, IEnumerable&lt;IDisposable&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_IDisposable_System_IDisposable_System_IDisposable_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, IDisposable, IDisposable, IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_IDisposable_System_IDisposable_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, IDisposable, IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ValueHolderUtilities.html#DigitalFlare_ValueHolderUtilities_ToValueHolder__1___0_System_IDisposable_">ValueHolderUtilities.ToValueHolder&lt;TValue&gt;(TValue, IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Runtime.Serialization.Json.JsonSerializationUtilities.html#DigitalFlare_Runtime_Serialization_Json_JsonSerializationUtilities_SerializeToJson__1___0_System_Boolean_">JsonSerializationUtilities.SerializeToJson&lt;T&gt;(T, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Runtime.Serialization.Json.JsonSerializationUtilities.html#DigitalFlare_Runtime_Serialization_Json_JsonSerializationUtilities_SerializeToJson__1___0_Newtonsoft_Json_JsonSerializer_System_Boolean_">JsonSerializationUtilities.SerializeToJson&lt;T&gt;(T, JsonSerializer, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Runtime.Serialization.Json.JsonSerializationUtilities.html#DigitalFlare_Runtime_Serialization_Json_JsonSerializationUtilities_SerializeToJsonAsync__1___0_">JsonSerializationUtilities.SerializeToJsonAsync&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Runtime.Serialization.Json.JsonSerializationUtilities.html#DigitalFlare_Runtime_Serialization_Json_JsonSerializationUtilities_SerializeToJson__1___0_">JsonSerializationUtilities.SerializeToJson&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_Arg__1___0_System_String_">ArgumentUtilities.Arg&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_Arg__1___0_System_String_DigitalFlare_ExceptionFactoryDelegate2_">ArgumentUtilities.Arg&lt;T&gt;(T, String, ExceptionFactoryDelegate2)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_ArgProp__1___0_System_String_">ArgumentUtilities.ArgProp&lt;TArg&gt;(TArg, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_ArgProp__1___0_System_String_DigitalFlare_ExceptionFactoryDelegate2_">ArgumentUtilities.ArgProp&lt;T&gt;(T, String, ExceptionFactoryDelegate2)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_PropArg__1___0_System_String_DigitalFlare_ExceptionFactoryDelegate2_">ArgumentUtilities.PropArg&lt;T&gt;(T, String, ExceptionFactoryDelegate2)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_PropArg__1___0_System_String_">ArgumentUtilities.PropArg&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilities.html#DigitalFlare_ArgumentUtilities_EnsureNotNull__1___0_System_String_">ArgumentUtilities.EnsureNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilities.html#DigitalFlare_Linq_EnumerableUtilities_EmptySequence__1___0_">EnumerableUtilities.EmptySequence&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilities.html#DigitalFlare_Linq_EnumerableUtilities_Sequence__1___0_System_Func___0_System_Boolean__System_Func___0___0__">EnumerableUtilities.Sequence&lt;T&gt;(T, Func&lt;T, Boolean&gt;, Func&lt;T, T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilities.html#DigitalFlare_Linq_EnumerableUtilities_Sequence__1___0_System_Int32_">EnumerableUtilities.Sequence&lt;T&gt;(T, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilities.html#DigitalFlare_Linq_EnumerableUtilities_Sequence__1___0_">EnumerableUtilities.Sequence&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentPlaceholderUtilities.html#DigitalFlare_ArgumentPlaceholderUtilities_ArgPlaceholder__1___0_">ArgumentPlaceholderUtilities.ArgPlaceholder&lt;TValue&gt;(TValue)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.StringUtilities.html#DigitalFlare_StringUtilities_ToFormattableString_System_Object_System_Boolean_">StringUtilities.ToFormattableString(Object, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.StringUtilities.html#DigitalFlare_StringUtilities_ToFormattableString_System_Object_">StringUtilities.ToFormattableString(Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.StringUtilities.html#DigitalFlare_StringUtilities_ToFormattableString__1___0_System_Boolean_">StringUtilities.ToFormattableString&lt;T&gt;(T, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.StringUtilities.html#DigitalFlare_StringUtilities_ToFormattableString__1___0_">StringUtilities.ToFormattableString&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.ArgumentUtilitiesCoreL1.html#DigitalFlare_ArgumentUtilitiesCoreL1_Cast__2___0_">ArgumentUtilitiesCoreL1.Cast&lt;TFrom, TTo&gt;(TFrom)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.FormatStringUtilities.html#DigitalFlare_FormatStringUtilities_FmtStr__1___0_">FormatStringUtilities.FmtStr&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Linq.EnumerableUtilitiesCoreL1.html#DigitalFlare_Linq_EnumerableUtilitiesCoreL1_TreeNode__1___0_">EnumerableUtilitiesCoreL1.TreeNode&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Description.DescriptionUtilities.html#DigitalFlare_Description_DescriptionUtilities_LogDisabilityWarning_System_Object_DigitalFlare_Description_IDescription_System_String_DigitalFlare_ArgumentPlaceholder_DigitalFlare_Diagnostics_SeverityLevel__">DescriptionUtilities.LogDisabilityWarning(Object, IDescription, String, ArgumentPlaceholder&lt;SeverityLevel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Description.DescriptionUtilities.html#DigitalFlare_Description_DescriptionUtilities_LogAutoActivationDisabilityWarning_System_Object_DigitalFlare_Description_IDescription_System_String_DigitalFlare_ArgumentPlaceholder_DigitalFlare_Diagnostics_SeverityLevel__">DescriptionUtilities.LogAutoActivationDisabilityWarning(Object, IDescription, String, ArgumentPlaceholder&lt;SeverityLevel&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.FluentApiUtilities.html#DigitalFlare_FluentApiUtilities_Fluent__1___0_">FluentApiUtilities.Fluent&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.FluentApiUtilities.html#DigitalFlare_FluentApiUtilities_Convert__2___0_System_Func___1__System_Func___0___1__">FluentApiUtilities.Convert&lt;TSource, TResult&gt;(TSource, Func&lt;TResult&gt;, Func&lt;TSource, TResult&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterAndExitLockSmallTimeout__1___0_">MonitorUtilities.EnterAndExitLockSmallTimeout&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterLockSmallTimeout__1___0_System_Boolean__">MonitorUtilities.EnterLockSmallTimeout&lt;T&gt;(T, ref Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterAndExitLock__1___0_">MonitorUtilities.EnterAndExitLock&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterLock__1___0_System_Boolean__">MonitorUtilities.EnterLock&lt;T&gt;(T, ref Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_EnterLock__1___0_System_Int32_System_Boolean__">MonitorUtilities.EnterLock&lt;T&gt;(T, Int32, ref Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_TryEnterLock__1___0_System_Boolean__">MonitorUtilities.TryEnterLock&lt;T&gt;(T, ref Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="DigitalFlare.Threading.MonitorUtilities.html#DigitalFlare_Threading_MonitorUtilities_ExitLock__1___0_">MonitorUtilities.ExitLock&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/new/dev/apiSpec/new?filename=DigitalFlare_Data_EfCore_EfCoreDbContext.md&amp;value=---%0Auid%3A%20DigitalFlare.Data.EfCore.EfCoreDbContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/vitalik-mironov/digital-flare.oxy/blob/dev/src/oxy.ef-core/Data.EfCore/EfCoreDbContext.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © Vitalik Mironov, 2006-2019. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

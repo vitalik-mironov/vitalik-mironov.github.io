@@ -1,0 +1,1577 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OrderWebAPI.OrderWebAPIBase
+   | Common-Lib docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OrderWebAPI.OrderWebAPIBase
+   | Common-Lib docs ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase">
+  
+  
+  <h1 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase" class="text-break">Class OrderWebAPI.OrderWebAPIBase
+  </h1>
+  <div class="markdown level0 summary">Base class for server-side implementations of OrderWebAPI</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">OrderWebAPI.OrderWebAPIBase</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.html">O3.Gcs.Integrations.Oms.Grpc.Stubs</a></h6>
+  <h6><strong>Assembly</strong>: O3.Gcs.CommonLib.Integrations.Oms.Stubs.dll</h6>
+  <h5 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BindServiceMethod(typeof(OrderWebAPI), &quot;BindService&quot;)]
+public abstract class OrderWebAPIBase</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_CancelOrder_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.CancelOrder*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_CancelOrder_O3_Gcs_Integrations_Oms_Grpc_Stubs_CancelOrderRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.CancelOrder(O3.Gcs.Integrations.Oms.Grpc.Stubs.CancelOrderRequest,Grpc.Core.ServerCallContext)">CancelOrder(CancelOrderRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;CancelOrderResponse&gt; CancelOrder(CancelOrderRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.CancelOrderRequest.html">CancelOrderRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.CancelOrderResponse.html">CancelOrderResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_CancelOrderByNumber_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.CancelOrderByNumber*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_CancelOrderByNumber_O3_Gcs_Integrations_Oms_Grpc_Stubs_CancelOrderByNumberRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.CancelOrderByNumber(O3.Gcs.Integrations.Oms.Grpc.Stubs.CancelOrderByNumberRequest,Grpc.Core.ServerCallContext)">CancelOrderByNumber(CancelOrderByNumberRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;CancelOrderByNumberResponse&gt; CancelOrderByNumber(CancelOrderByNumberRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.CancelOrderByNumberRequest.html">CancelOrderByNumberRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.CancelOrderByNumberResponse.html">CancelOrderByNumberResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_CancelOrderV2_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.CancelOrderV2*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_CancelOrderV2_O3_Gcs_Integrations_Oms_Grpc_Stubs_CancelOrderV2Request_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.CancelOrderV2(O3.Gcs.Integrations.Oms.Grpc.Stubs.CancelOrderV2Request,Grpc.Core.ServerCallContext)">CancelOrderV2(CancelOrderV2Request, ServerCallContext)</h4>
+  <div class="markdown level1 summary">
+CancelOrderV2 cancel order/shipment/postings/items.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;CancelOrderV2Response&gt; CancelOrderV2(CancelOrderV2Request request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.CancelOrderV2Request.html">CancelOrderV2Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td>The request received from the client.</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td>The context of the server-side call handler being invoked.</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.CancelOrderV2Response.html">CancelOrderV2Response</a>&gt;</td>
+        <td>The response to send back to the client (wrapped by a task).</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_ChangeAddressee_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.ChangeAddressee*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_ChangeAddressee_O3_Gcs_Integrations_Oms_Grpc_Stubs_ChangeAddresseeRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.ChangeAddressee(O3.Gcs.Integrations.Oms.Grpc.Stubs.ChangeAddresseeRequest,Grpc.Core.ServerCallContext)">ChangeAddressee(ChangeAddresseeRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;ChangeAddresseeResponse&gt; ChangeAddressee(ChangeAddresseeRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.ChangeAddresseeRequest.html">ChangeAddresseeRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.ChangeAddresseeResponse.html">ChangeAddresseeResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_CreateAddress_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.CreateAddress*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_CreateAddress_O3_Gcs_Integrations_Oms_Grpc_Stubs_CreateAddressRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.CreateAddress(O3.Gcs.Integrations.Oms.Grpc.Stubs.CreateAddressRequest,Grpc.Core.ServerCallContext)">CreateAddress(CreateAddressRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;CreateAddressResponse&gt; CreateAddress(CreateAddressRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.CreateAddressRequest.html">CreateAddressRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.CreateAddressResponse.html">CreateAddressResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_CreateDigitalOrder_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.CreateDigitalOrder*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_CreateDigitalOrder_O3_Gcs_Integrations_Oms_Grpc_Stubs_CreateDigitalOrderRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.CreateDigitalOrder(O3.Gcs.Integrations.Oms.Grpc.Stubs.CreateDigitalOrderRequest,Grpc.Core.ServerCallContext)">CreateDigitalOrder(CreateDigitalOrderRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;CreateDigitalOrderResponse&gt; CreateDigitalOrder(CreateDigitalOrderRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.CreateDigitalOrderRequest.html">CreateDigitalOrderRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.CreateDigitalOrderResponse.html">CreateDigitalOrderResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_CreateOrderV2_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.CreateOrderV2*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_CreateOrderV2_O3_Gcs_Integrations_Oms_Grpc_Stubs_CreateOrderV2Request_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.CreateOrderV2(O3.Gcs.Integrations.Oms.Grpc.Stubs.CreateOrderV2Request,Grpc.Core.ServerCallContext)">CreateOrderV2(CreateOrderV2Request, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;CreateOrderV2Response&gt; CreateOrderV2(CreateOrderV2Request request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.CreateOrderV2Request.html">CreateOrderV2Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.CreateOrderV2Response.html">CreateOrderV2Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetActiveOrdersByClientID_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetActiveOrdersByClientID*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetActiveOrdersByClientID_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetActiveOrdersByClientIDRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetActiveOrdersByClientID(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetActiveOrdersByClientIDRequest,Grpc.Core.ServerCallContext)">GetActiveOrdersByClientID(GetActiveOrdersByClientIDRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetActiveOrdersByClientIDResponse&gt; GetActiveOrdersByClientID(GetActiveOrdersByClientIDRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetActiveOrdersByClientIDRequest.html">GetActiveOrdersByClientIDRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetActiveOrdersByClientIDResponse.html">GetActiveOrdersByClientIDResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetCancelReasonsV2_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetCancelReasonsV2*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetCancelReasonsV2_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetCancelReasonsV2Request_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetCancelReasonsV2(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetCancelReasonsV2Request,Grpc.Core.ServerCallContext)">GetCancelReasonsV2(GetCancelReasonsV2Request, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetCancelReasonsV2Response&gt; GetCancelReasonsV2(GetCancelReasonsV2Request request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetCancelReasonsV2Request.html">GetCancelReasonsV2Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetCancelReasonsV2Response.html">GetCancelReasonsV2Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetClientOrderItemsCountGroupByYear_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetClientOrderItemsCountGroupByYear*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetClientOrderItemsCountGroupByYear_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetClientOrderItemsCountGroupByYearRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetClientOrderItemsCountGroupByYear(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrderItemsCountGroupByYearRequest,Grpc.Core.ServerCallContext)">GetClientOrderItemsCountGroupByYear(GetClientOrderItemsCountGroupByYearRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetClientOrderItemsCountGroupByYearResponse&gt; GetClientOrderItemsCountGroupByYear(GetClientOrderItemsCountGroupByYearRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrderItemsCountGroupByYearRequest.html">GetClientOrderItemsCountGroupByYearRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrderItemsCountGroupByYearResponse.html">GetClientOrderItemsCountGroupByYearResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetClientOrdersByFilter_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetClientOrdersByFilter*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetClientOrdersByFilter_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetClientOrdersByFilterRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetClientOrdersByFilter(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrdersByFilterRequest,Grpc.Core.ServerCallContext)">GetClientOrdersByFilter(GetClientOrdersByFilterRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetClientOrdersByFilterResponse&gt; GetClientOrdersByFilter(GetClientOrdersByFilterRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrdersByFilterRequest.html">GetClientOrdersByFilterRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrdersByFilterResponse.html">GetClientOrdersByFilterResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetClientOrdersByItemIDs_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetClientOrdersByItemIDs*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetClientOrdersByItemIDs_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetClientOrdersByItemIDsRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetClientOrdersByItemIDs(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrdersByItemIDsRequest,Grpc.Core.ServerCallContext)">GetClientOrdersByItemIDs(GetClientOrdersByItemIDsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetClientOrdersByItemIDsResponse&gt; GetClientOrdersByItemIDs(GetClientOrdersByItemIDsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrdersByItemIDsRequest.html">GetClientOrdersByItemIDsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrdersByItemIDsResponse.html">GetClientOrdersByItemIDsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetClientOrdersCountGroupByYear_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetClientOrdersCountGroupByYear*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetClientOrdersCountGroupByYear_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetClientOrdersCountGroupByYearRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetClientOrdersCountGroupByYear(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrdersCountGroupByYearRequest,Grpc.Core.ServerCallContext)">GetClientOrdersCountGroupByYear(GetClientOrdersCountGroupByYearRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetClientOrdersCountGroupByYearResponse&gt; GetClientOrdersCountGroupByYear(GetClientOrdersCountGroupByYearRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrdersCountGroupByYearRequest.html">GetClientOrdersCountGroupByYearRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrdersCountGroupByYearResponse.html">GetClientOrdersCountGroupByYearResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetClientOrdersV2_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetClientOrdersV2*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetClientOrdersV2_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetClientOrdersV2Request_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetClientOrdersV2(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrdersV2Request,Grpc.Core.ServerCallContext)">GetClientOrdersV2(GetClientOrdersV2Request, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetClientOrdersV2Response&gt; GetClientOrdersV2(GetClientOrdersV2Request request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrdersV2Request.html">GetClientOrdersV2Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientOrdersV2Response.html">GetClientOrdersV2Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetClientsPurchaseHistoryByItem_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetClientsPurchaseHistoryByItem*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetClientsPurchaseHistoryByItem_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetClientsPurchaseHistoryByItemRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetClientsPurchaseHistoryByItem(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientsPurchaseHistoryByItemRequest,Grpc.Core.ServerCallContext)">GetClientsPurchaseHistoryByItem(GetClientsPurchaseHistoryByItemRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetClientsPurchaseHistoryByItemResponse&gt; GetClientsPurchaseHistoryByItem(GetClientsPurchaseHistoryByItemRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientsPurchaseHistoryByItemRequest.html">GetClientsPurchaseHistoryByItemRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetClientsPurchaseHistoryByItemResponse.html">GetClientsPurchaseHistoryByItemResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetItemPurchasesCountByFilter_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetItemPurchasesCountByFilter*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetItemPurchasesCountByFilter_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetItemPurchasesCountByFilterRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetItemPurchasesCountByFilter(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetItemPurchasesCountByFilterRequest,Grpc.Core.ServerCallContext)">GetItemPurchasesCountByFilter(GetItemPurchasesCountByFilterRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetItemPurchasesCountByFilterResponse&gt; GetItemPurchasesCountByFilter(GetItemPurchasesCountByFilterRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetItemPurchasesCountByFilterRequest.html">GetItemPurchasesCountByFilterRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetItemPurchasesCountByFilterResponse.html">GetItemPurchasesCountByFilterResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetItemsByClientID_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetItemsByClientID*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetItemsByClientID_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetItemsByClientIDRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetItemsByClientID(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetItemsByClientIDRequest,Grpc.Core.ServerCallContext)">GetItemsByClientID(GetItemsByClientIDRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetItemsByClientIDResponse&gt; GetItemsByClientID(GetItemsByClientIDRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetItemsByClientIDRequest.html">GetItemsByClientIDRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetItemsByClientIDResponse.html">GetItemsByClientIDResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetItemsPurchaseHistory_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetItemsPurchaseHistory*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetItemsPurchaseHistory_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetItemsPurchaseHistoryRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetItemsPurchaseHistory(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetItemsPurchaseHistoryRequest,Grpc.Core.ServerCallContext)">GetItemsPurchaseHistory(GetItemsPurchaseHistoryRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetItemsPurchaseHistoryResponse&gt; GetItemsPurchaseHistory(GetItemsPurchaseHistoryRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetItemsPurchaseHistoryRequest.html">GetItemsPurchaseHistoryRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetItemsPurchaseHistoryResponse.html">GetItemsPurchaseHistoryResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetOrderByID_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetOrderByID*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetOrderByID_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetOrderByIDRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetOrderByID(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrderByIDRequest,Grpc.Core.ServerCallContext)">GetOrderByID(GetOrderByIDRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetOrderByIDResponse&gt; GetOrderByID(GetOrderByIDRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrderByIDRequest.html">GetOrderByIDRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrderByIDResponse.html">GetOrderByIDResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetOrderByNumber_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetOrderByNumber*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetOrderByNumber_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetOrderByNumberRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetOrderByNumber(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrderByNumberRequest,Grpc.Core.ServerCallContext)">GetOrderByNumber(GetOrderByNumberRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetOrderByNumberResponse&gt; GetOrderByNumber(GetOrderByNumberRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrderByNumberRequest.html">GetOrderByNumberRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrderByNumberResponse.html">GetOrderByNumberResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetOrderByNumberV2_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetOrderByNumberV2*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetOrderByNumberV2_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetOrderByNumberV2Request_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetOrderByNumberV2(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrderByNumberV2Request,Grpc.Core.ServerCallContext)">GetOrderByNumberV2(GetOrderByNumberV2Request, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetOrderByNumberV2Response&gt; GetOrderByNumberV2(GetOrderByNumberV2Request request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrderByNumberV2Request.html">GetOrderByNumberV2Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrderByNumberV2Response.html">GetOrderByNumberV2Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetOrdersByIDsV2_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetOrdersByIDsV2*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetOrdersByIDsV2_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetOrdersByIDsV2Request_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetOrdersByIDsV2(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrdersByIDsV2Request,Grpc.Core.ServerCallContext)">GetOrdersByIDsV2(GetOrdersByIDsV2Request, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetOrdersByIDsV2Response&gt; GetOrdersByIDsV2(GetOrdersByIDsV2Request request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrdersByIDsV2Request.html">GetOrdersByIDsV2Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrdersByIDsV2Response.html">GetOrdersByIDsV2Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetOrdersByNumbersV2_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetOrdersByNumbersV2*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetOrdersByNumbersV2_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetOrdersByNumbersV2Request_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetOrdersByNumbersV2(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrdersByNumbersV2Request,Grpc.Core.ServerCallContext)">GetOrdersByNumbersV2(GetOrdersByNumbersV2Request, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetOrdersByNumbersV2Response&gt; GetOrdersByNumbersV2(GetOrdersByNumbersV2Request request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrdersByNumbersV2Request.html">GetOrdersByNumbersV2Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetOrdersByNumbersV2Response.html">GetOrdersByNumbersV2Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetPostingByOrderIDs_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetPostingByOrderIDs*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetPostingByOrderIDs_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetPostingByOrderIDsRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetPostingByOrderIDs(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetPostingByOrderIDsRequest,Grpc.Core.ServerCallContext)">GetPostingByOrderIDs(GetPostingByOrderIDsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetPostingByOrderIDsResponse&gt; GetPostingByOrderIDs(GetPostingByOrderIDsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetPostingByOrderIDsRequest.html">GetPostingByOrderIDsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetPostingByOrderIDsResponse.html">GetPostingByOrderIDsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetPostingsByIDs_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetPostingsByIDs*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetPostingsByIDs_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetPostingsByIDsRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetPostingsByIDs(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetPostingsByIDsRequest,Grpc.Core.ServerCallContext)">GetPostingsByIDs(GetPostingsByIDsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetPostingsByIDsResponse&gt; GetPostingsByIDs(GetPostingsByIDsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetPostingsByIDsRequest.html">GetPostingsByIDsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetPostingsByIDsResponse.html">GetPostingsByIDsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetPostingsByPostingNumbers_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetPostingsByPostingNumbers*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetPostingsByPostingNumbers_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetPostingsByPostingNumbersRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetPostingsByPostingNumbers(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetPostingsByPostingNumbersRequest,Grpc.Core.ServerCallContext)">GetPostingsByPostingNumbers(GetPostingsByPostingNumbersRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetPostingsByPostingNumbersResponse&gt; GetPostingsByPostingNumbers(GetPostingsByPostingNumbersRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetPostingsByPostingNumbersRequest.html">GetPostingsByPostingNumbersRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetPostingsByPostingNumbersResponse.html">GetPostingsByPostingNumbersResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetPostingsByRezonIDs_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetPostingsByRezonIDs*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetPostingsByRezonIDs_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetPostingsByRezonIDsRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetPostingsByRezonIDs(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetPostingsByRezonIDsRequest,Grpc.Core.ServerCallContext)">GetPostingsByRezonIDs(GetPostingsByRezonIDsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetPostingsByRezonIDsResponse&gt; GetPostingsByRezonIDs(GetPostingsByRezonIDsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetPostingsByRezonIDsRequest.html">GetPostingsByRezonIDsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetPostingsByRezonIDsResponse.html">GetPostingsByRezonIDsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetShipmentsByIDs_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetShipmentsByIDs*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_GetShipmentsByIDs_O3_Gcs_Integrations_Oms_Grpc_Stubs_GetShipmentsByIDsRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.GetShipmentsByIDs(O3.Gcs.Integrations.Oms.Grpc.Stubs.GetShipmentsByIDsRequest,Grpc.Core.ServerCallContext)">GetShipmentsByIDs(GetShipmentsByIDsRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;GetShipmentsByIDsResponse&gt; GetShipmentsByIDs(GetShipmentsByIDsRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetShipmentsByIDsRequest.html">GetShipmentsByIDsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.GetShipmentsByIDsResponse.html">GetShipmentsByIDsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_SetPostingTrackingNumber_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.SetPostingTrackingNumber*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_SetPostingTrackingNumber_O3_Gcs_Integrations_Oms_Grpc_Stubs_SetPostingTrackingNumberRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.SetPostingTrackingNumber(O3.Gcs.Integrations.Oms.Grpc.Stubs.SetPostingTrackingNumberRequest,Grpc.Core.ServerCallContext)">SetPostingTrackingNumber(SetPostingTrackingNumberRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;SetPostingTrackingNumberResponse&gt; SetPostingTrackingNumber(SetPostingTrackingNumberRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.SetPostingTrackingNumberRequest.html">SetPostingTrackingNumberRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.SetPostingTrackingNumberResponse.html">SetPostingTrackingNumberResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_UpdateOrderPaymentMethod_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.UpdateOrderPaymentMethod*"></a>
+  <h4 id="O3_Gcs_Integrations_Oms_Grpc_Stubs_OrderWebAPI_OrderWebAPIBase_UpdateOrderPaymentMethod_O3_Gcs_Integrations_Oms_Grpc_Stubs_UpdateOrderPaymentMethodRequest_Grpc_Core_ServerCallContext_" data-uid="O3.Gcs.Integrations.Oms.Grpc.Stubs.OrderWebAPI.OrderWebAPIBase.UpdateOrderPaymentMethod(O3.Gcs.Integrations.Oms.Grpc.Stubs.UpdateOrderPaymentMethodRequest,Grpc.Core.ServerCallContext)">UpdateOrderPaymentMethod(UpdateOrderPaymentMethodRequest, ServerCallContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;UpdateOrderPaymentMethodResponse&gt; UpdateOrderPaymentMethod(UpdateOrderPaymentMethodRequest request, ServerCallContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.UpdateOrderPaymentMethodRequest.html">UpdateOrderPaymentMethodRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Grpc.Core.ServerCallContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="O3.Gcs.Integrations.Oms.Grpc.Stubs.UpdateOrderPaymentMethodResponse.html">UpdateOrderPaymentMethodResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="O3.Gcs.Diagnostics.Metrics.MetricUtilities.html#O3_Gcs_Diagnostics_Metrics_MetricUtilities_GetMetricComponentName_System_Object_">MetricUtilities.GetMetricComponentName(Object)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            ©LLC Ozon Technology
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
